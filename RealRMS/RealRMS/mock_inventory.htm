@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>RMS - Create Inventory</title>
+    <link rel="stylesheet" href="/Content/grid.css">
+    <link rel="stylesheet" href="/Content/site.css" />
+    <link rel="stylesheet" href="/Content/datagrid.css" />
+    <link rel="stylesheet" href="/Content/modal.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+    <script type="text/javascript" src="/Scripts/site.js"></script>
+    <script type="text/javascript" src="/Scripts/site.utility.js"></script>
+    <script type="text/javascript" src="/Scripts/site.ui.js"></script>
+
+    <script type="text/javascript">
+        var inventory = function () {
+
+            var inventory = [
+                {
+                    id: 1,
+                    name: "Ground Beef",
+                    category: "Meat",
+                    onhand: '17',
+                    unit: 'Lbs',
+                    cost: '$3.99',
+                    reorder: false
+                },
+                {
+                    id: 2,
+                    name: "Ground Turkey",
+                    category: "Meat",
+                    onhand: '4',
+                    unit: 'Lbs',
+                    cost: '$2.99',
+                    reorder: true
+                },
+                {
+                    id: 3,
+                    name: "Chicken Breast",
+                    category: "Meat",
+                    onhand: '11',
+                    unit: 'Lbs',
+                    cost: '$1.99',
+                    reorder: true
+                },
+                {
+                    id: 4,
+                    name: "Cheddar Cheese",
+                    category: "Dairy",
+                    onhand: '1',
+                    unit: 'Lbs',
+                    cost: '$1.99',
+                    reorder: true
+                },
+                {
+                    id: 5,
+                    name: "Tomatoes",
+                    category: "Produce",
+                    onhand: '14',
+                    unit: 'Units',
+                    cost: '$1.00',
+                    reorder: false
+                },
+                {
+                    id: 6,
+                    name: "Potatoes",
+                    category: "Grains/Starches",
+                    onhand: '23',
+                    unit: 'Lbs',
+                    cost: '$.39',
+                    reorder: false
+                }
+            ];
+
+
+        $(document).ready(function() {
+            var id = site.utility.getQueryStringValue("id"); //window.location.href.split('=')[1];
+            for (var i = 0; i < inventory.length; i++) {
+                var item = inventory[i];
+                if (item.id == parseInt(id)) {
+                    document.getElementById("id").value = item.id;
+                    document.getElementById("name").value = item.name;
+                    document.getElementById("cost").value = item.cost;
+                    document.getElementById("qty").value = item.onhand;
+                    site.ui.populateOptionByText("unit", item.unit);
+                    site.ui.populateOptionByText("category", item.category);
+                }
+            }
+        });
+
+		return {
+			submit: function(evt){
+
+			}
+		}
+	}();
+    </script>
+</head>
+
+<body>
+    <form method="post" action="mock_menu.htm">
+	<div class="row alignRight">
+        <div class=col-12>
+            <a href="mock_menu.htm">
+            	<img src="home_icon.png" alt="home" title="home" />
+            </a>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-12 alignCenter">
+                <h1>Create Inventory</h1>
+            </div>
+        </div>
+        <div style="width: 100%; height:100%;">
+            <div class="row">
+                <div class="col-12">
+                    <span class="errorText">
+
+                    </span>
+                    <span class="informationalText">
+
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 alignRight">
+                    Id:
+                </div>
+                <div class="col-9">
+                    <input id="id" readonly name="empId" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 alignRight">
+                    Name:
+                </div>
+                <div class="col-9">
+                    <input id="name" name="name" type="text" required/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 alignRight">
+                    Category:
+                </div>
+                <div class="col-9">
+                    <select id="category" name="category">
+                        <option value="">--Choose One--</option>
+                        <option value="1">Dairy</option>
+                        <option value="2">Produce</option>
+                        <option value="3">Beverage</option>
+                        <option value="4">Alcohol</option>
+                        <option value="5">Meat</option>
+                        <option value="6">Beans</option>
+                        <option value="7">Grains and Starches</option>
+                        <option value="8">Baking</option>
+                        <option value="9">Bread</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 alignRight">
+                    Cost
+                </div>
+                <div class="col-9">
+                    <input type="text" id="cost" name="cost" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 alignRight">
+                    Unit:
+                </div>
+                <div class="col-9">
+                    <select id="unit" name="unit">
+                        <option value="">--Choose One--</option>
+                        <option value="1">Lbs</option>
+                        <option value="2">Oz</option>
+                        <option value="3">Units</option>
+                        <option value="4">Liters</option>
+                        <option value="5">Gallons</option>
+                        <option value="6">Cups</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 alignRight">
+                    Quantity:
+                </div>
+                <div class="col-9">
+                    <input id="qty" name="qty" type="text" required />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 alignRight">
+                    Reorder threshold:
+                </div>
+                <div class="col-9">
+                    <input type="text" id="reorder" name="reorder" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 alignRight">
+                    <input type="button" name="Cancel" value="Cancel" onclick="window.location.href = '/Home/Menu';" />
+                    <input type="button" name="save" id="save" value="Save" onclick="window.location.href = 'Home/Menu'"/>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+﻿@model IEnumerable<RealRMS.Models.UserInfoModel>
+@{
+    ViewBag.Title = "Employees";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int i = 0;
+}
+
+@section stylesheets{
+    <link rel="stylesheet" href="/Content/datagrid.css" />
+}
+@section scripts{
+}
+<div class="row">
+    <h1 class="alignCenter">
+        Employee List
+    </h1>
+</div>
+<div class="row">
+    <div class="col-12">
+        <span class="errorText">
+        </span>
+        <span class="informationalText">
+        </span>
+    </div>
+</div>
+<div class="row" style="">
+    <div class="col-1"></div>
+    <div class="col-10">
+        <table>
+            <tr class="row">
+                <th>
+                    Id
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    DOB
+                </th>
+                <th>
+                    Street
+                </th>
+                <th>
+                    City
+                </th>
+                <th>
+                    State
+                </th>
+                <th>
+                    Zip
+                </th>
+                <th>
+                    Rate
+                </th>
+                <th>
+                    Roles
+                </th>
+            </tr>
+            @foreach (var emp in Model) {
+
+                <tr class="@(1 == 0 || i % 2 == 0 ? "alternatingRow" : "row")">
+                    <td>
+                        @emp.Id
+                    </td>
+                    <td>
+                        <a class="goToItem" href="Edit?id=@emp.Id">
+                            @(string.Format("{0}{1}{2}", emp.FirstName, !string.IsNullOrWhiteSpace(emp.MiddleName) ? " " + emp.MiddleName : string.Empty,
+                                  " " + emp.LastName))
+                        </a>
+                    </td>
+                    <td>
+                        @emp.DateOfBirth
+                    </td>
+                    <td>
+                        @emp.Street
+                    </td>
+                    <td>
+                        @emp.City
+                    </td>
+                    <td>
+                        @emp.State
+                    </td>
+                    <td>
+                        @emp.Zip
+                    </td>
+                    <td>
+                        @emp.Rate
+                    </td>
+                    <td>
+                        @string.Join(", ", @emp.Roles.Select(r => r.Name))
+                    </td>
+                </tr>
+                i = i + 1;
+            }
+        </table>
+    </div>
+    <div class="col-1"></div>
+</div>
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+        <input type="button" id="add" name="add" value="Add Employee" onclick="window.location.href = 'New'"/>
+    </div>
+    <div class="col-1">
+            
+    </div>
+</div>

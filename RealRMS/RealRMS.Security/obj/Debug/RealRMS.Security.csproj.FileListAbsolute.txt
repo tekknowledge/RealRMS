@@ -1,0 +1,5 @@
+C:\Users\dwitherspoon\Documents\Visual Studio 2013\Projects\RealRMS\RealRMS.Security\bin\Debug\RealRMS.Security.dll
+C:\Users\dwitherspoon\Documents\Visual Studio 2013\Projects\RealRMS\RealRMS.Security\bin\Debug\RealRMS.Security.pdb
+C:\Users\dwitherspoon\Documents\Visual Studio 2013\Projects\RealRMS\RealRMS.Security\obj\Debug\RealRMS.Security.dll
+C:\Users\dwitherspoon\Documents\Visual Studio 2013\Projects\RealRMS\RealRMS.Security\obj\Debug\RealRMS.Security.pdb
+C:\Users\dwitherspoon\Documents\Visual Studio 2013\Projects\RealRMS\RealRMS.Security\obj\Debug\RealRMS.Security.csprojResolveAssemblyReference.cache

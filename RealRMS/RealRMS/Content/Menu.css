@@ -1,0 +1,61 @@
+﻿    html, body {
+        height: 100%;
+    }
+
+    .navlink {
+        border-width: 1px;
+        box-shadow: 10px 10px 5px #888888;
+        -webkit-box-shadow: 10px 10px 5px #888888;
+        -moz-box-shadow: 10px 10px 5px #888888;
+        border-style: dotted;
+        border-radius: 12px;
+        background-color: blue;
+        align-items: stretch;
+        float: left;
+        width: 125px;
+        height: 125px;
+        padding: 10px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+        margin-top: 25px;
+    }
+
+        .navlink:hover {
+            opacity: 0.75;
+        }
+
+    .col-5.boxBorder {
+        border: 2px solid black;
+        border-radius: 10px;
+        margin: 25px;
+        width:auto;
+    }
+
+    .menuOption {
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+
+    .navlink a {
+        display: block;
+        color: white;
+        text-decoration: none;
+    }
+
+    .menu_icon {
+        margin-bottom: 7px;
+    }
+
+    .fillScreen {
+        height: 750px;
+    }
+
+        .fillScreen .row .padded {
+            height: 70%;
+            display: flex;
+        }
+
+    .padded {
+        padding-bottom: 25px;
+    }

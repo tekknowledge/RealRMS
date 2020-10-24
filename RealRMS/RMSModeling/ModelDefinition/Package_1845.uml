@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="1b772a5e-65da-4ac9-b42c-780d2ab21482"
+  name="RealRMS"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="22083cd2-1350-47d7-b92c-3d15cf678c37"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DRealRMS"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="420c8ee7-ff8c-4acb-b331-e4bd3854fddf"
+        LastKnownName="Models"
+        LastKnownLocation="Package1_1845.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="63e088ef-4311-4a31-8e24-6b21a7c21811"
+        LastKnownName="Repository"
+        LastKnownLocation="Package_1846.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="360c2104-98ac-4d08-b70a-f889d3433065"
+        LastKnownName="Utility"
+        LastKnownLocation="Package1_1846.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,74 @@
+﻿@model RealRMS.Models.ViewModel.MainMenuViewModel
+@{
+    ViewBag.Title = "Main Menu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+@section stylesheets{
+    <link rel="stylesheet" href="~/Content/Menu.css" />
+}
+
+@section scripts{
+    <script type="text/javascript" language="javascript" src="~/Scripts/Menu.js"></script>
+}
+
+<div class="row alignCenter">
+    <h1>Main Menu</h1>
+</div>
+<div class="row">
+    <div class="col-12">
+        <span class="errorText">
+        </span>
+        <span class="informationalText">
+        </span>
+    </div>
+</div>
+<div class="fillScreen">
+    <div class="row padded ">
+        <div class="col-3"></div>
+        <div class="col-5 alignCenter boxBorder">
+            <input type="hidden" id="EmployeeId" name="EmployeeId" value="@Model.UserId"/>
+            <input type="hidden" id="TimeCardId" name="TimeCardId"/>
+            @if (Model.IsAdmin) {
+                <div class="navlink">
+                    <a href="~/coming_soon.html" class="" id="rptlink"><img src="/Content/Images/menu_rpt_icon.png" class="menu_icon"/>Reports</a>
+                </div>
+                <div class="navlink">
+                    <a href="/Menu/Index" class="" id="menulink"><img src="/Content/Images/menu_nav_icon.png" class="menu_icon"/>Menu</a>
+
+                </div>
+                <div class="navlink">
+                    <a href="/mock_inventoryList.htm" class="" id="invlink"><img src="/Content/Images/menu_inv_icon.png" class="menu_icon"/>Inventory</a>
+                </div>
+                <div class="navlink">
+                    <a href="/Registration/Index" class="" id="emplink"><img src="/Content/Images/menu_emp_icon.png" class="menu_icon"/>Employees</a>
+                </div>
+            }
+
+            <div class="navlink">
+                <a href="/Order/Index" class="" id="orderlink"><img src="/Content/Images/menu_order_icon.png" class="menu_icon"/> Orders</a>
+            </div>
+
+            @if (Model.IsAdmin || Model.IsServer) {
+                <div class="navlink">
+                    <a href="~/coming_soon.html" class="" id="translink"><img src="/Content/Images/menu_trans_icon.png" class="menu_icon"/>Transactions</a>
+                </div>
+            }
+
+            @if (Model.IsClockedIn) {
+                <div class="navlink">
+                    <a href="javascript:menu.clockOut()" class="" id="clockLink"><img src="/Content/Images/menu_clock_icon.png" class="menu_icon"/>Clock Out</a>
+                </div>
+            } else {
+                <div class="navlink">
+                    <a href="javascript:menu.clockIn()" class="" id="clockLink"><img src="/Content/Images/menu_clock_icon.png" class="menu_icon"/>Clock In</a>
+                </div>
+            }
+
+            <div class="navlink">
+                <a href="Logout?message=You have been logged out." class="" id="logoutLink"><img src="/Content/Images/menu_logout_icon.png" class="menu_icon"/>Log&nbsp;Out</a>
+            </div>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>

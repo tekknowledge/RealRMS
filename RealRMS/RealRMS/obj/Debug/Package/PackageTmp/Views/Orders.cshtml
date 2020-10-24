@@ -1,0 +1,154 @@
+﻿@using RealRMS.Models
+@using RealRMS.Repository
+@using RealRMS.Utility
+@model IEnumerable<RealRMS.Models.OrderModel>
+@{
+    ViewBag.Title = "Orders";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int i = 0;
+    UserInfoRepository userInfo = new UserInfoRepository();
+    MenuRepository menuInfo = new MenuRepository(new ApplicationCache(HttpContext.Current.Application));  
+}
+
+@section stylesheets{
+    <link rel="stylesheet" href="~/Content/datagrid.css"/>
+}
+@section scripts{
+    <script type="text/javascript" language="javascript" src="~/Scripts/orders.js"></script>
+}
+
+<div class="row alignCenter">
+    <h1>
+        My Orders
+    </h1>
+</div>
+<div class="row">
+    <div class="row-2"></div>
+    <div class="col-8">
+        <span class="errorText">
+        </span>
+        <span class="informationalText">
+        </span>
+    </div>
+    <div class="row-2"></div>
+</div>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+        <table id="grid">
+            <tr class="row">
+                @if (ViewBag.IsCook) {
+                    <th class="alignCenter tenPercent">
+                        Expand
+                    </th>
+                }
+                <th>
+                    Id
+                </th>
+                <th class="fifteenPercent">
+                    Table Number
+                </th>
+                <th class="thirtyFivePercent">
+                    Server
+                </th>
+                <th>
+                    In Progress?
+                </th>
+                <th>
+                    Done?
+                </th>
+                <th>
+                    Delivered?
+                </th>
+            </tr>
+            @foreach (var order in Model) {
+                <tr class="@(i == 0 || i % 2 == 0 ? "alternatingRow" : "row")">
+                    @if (ViewBag.IsCook) {
+                        <td class="alignCenter">
+                            <input type="button" onclick="orders.expand(this)" value="+"/>
+                        </td>
+                    }
+                    <td class="alignCenter">
+                        @order.Id
+                    </td>
+                    <td class="alignCenter">
+                        <a class="goToItem" href="@(ViewBag.CanTakeOrders ?
+                                       string.Format("Edit?id=" + order.Id.ToString()) :
+                                       "javascript:void(0);")">@order.TableId</a>
+                    </td>
+                    <td>
+                        @{
+                            var serverInformation = userInfo.Get(order.EmployeeId);
+                        }
+                        @string.Format("{0} {1}", serverInformation.FirstName, serverInformation.LastName)
+                    </td>
+                    <td class="alignCenter">
+                        <input type="checkbox" id="inprogress" disabled checked="@order.InProgress"/>
+                    </td>
+                    <td class="alignCenter">
+                        <input type="checkbox" id="@(string.Format("orderDone_{0}", order.Id))" disabled checked="@(order.OrderItems.Any() && order.OrderItems.All(oi => oi.Ready.HasValue && oi.Ready == true))"/>
+                    </td>
+                    <td class="alignCenter">
+                        <input type="checkbox" id="@(string.Format("orderDelivered_{0}", order.Id))" checked="@order.Delivered" @(order.OrderItems.Any() && order.OrderItems.All(oi => oi.Ready.HasValue && oi.Ready == true) ? string.Empty : "disabled")
+                               onclick="orders.setOrderDelivered(this, @order.Id)" title=""/>
+                        <p>
+                            <span class="loadingMessage" id="@string.Format("deliveringPrompt_{0}", order.Id)">Saving...</span>
+                            <span class="loadedMessage" id="@string.Format("deliveredPrompt_{0}", order.Id)">Your order has been updated!</span>
+                        </p>
+                    </td>
+                </tr>
+                if (ViewBag.IsCook) {
+                     <tr style="display: none">
+                         <td colspan="1"></td>
+                         <td colspan="6">
+                             @{ bool hasItems = false; }
+                             @foreach (var item in order.OrderItems) {
+                                 var metadata = menuInfo.Get(item.MenuId);
+                                 hasItems = true;
+                                 <div class="row smallGridFont">
+                                     <div class="col-3">
+                                         @metadata.Name
+                                     </div>
+                                     <div class="col-4">
+                                         @(string.IsNullOrEmpty(item.Comment) ? "No special instructions." : item.Comment)
+                                     </div>
+                                     <div class="col-2">
+                                         Seat @item.SeatNumber
+                                     </div>
+                                     <div class="col-3">
+                                         @{ var chkbxId = string.Format("itemDone_{0}", item.Id); }
+
+                                         <input type="checkbox" id="@chkbxId" class="@string.Format("orderItem{0}", item.OrderId)" checked="@item.Ready" value="@Newtonsoft.Json.JsonConvert.SerializeObject(item)"/>
+                                         <label for="@chkbxId">Check when done</label>
+                                     </div>
+                                 </div>
+                             }
+                             @if (!hasItems) {
+                                 <p>There are no items associated with this order yet!</p>
+                             } else {
+                                 <div class="row">
+                                     <div class="col-12 alignRight">
+                                         <span class="loadingMessage" id="@string.Format("savingPrompt_{0}", order.Id)">Saving...</span>
+                                         <span class="loadedMessage"  id="@string.Format("savedPrompt_{0}", order.Id)">Your order has been updated!</span>
+                                         <input type="button" value="Update Order Status" onclick="orders.updateOrder(@order.Id);"/>
+                                     </div>
+                                 </div>
+                             }
+                         </td>
+                     </tr>
+                 }
+                i = i + 1;
+            }
+        </table>
+    </div>
+    <div class="col-2"></div>
+</div>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+        @if (ViewBag.CanTakeOrders) {
+            <input type="button" id="add" name="add" value="New Order" onclick="window.location.href = '/Order/New';"/>
+        }
+    </div>
+    <div class="col-2"></div>
+</div>

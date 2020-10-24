@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>RMS - View Employees</title>
+    <link rel="stylesheet" href="/Content/grid.css">
+    <link rel="stylesheet" href="/Content/site.css" />
+    <link rel="stylesheet" href="/Content/datagrid.css"/>
+    <link rel="stylesheet" href="/Content/modal.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+    <script type="text/javascript" src="/Scripts/site.js"></script>
+    <script type="text/javascript" src="/Scripts/site.utility.js"></script>
+    <script type="text/javascript" src="/Scripts/site.ui.js"></script>
+    <script type="text/javascript">
+        var inventoryList = (function () {
+            var inventory = [
+            {
+                id: 1,
+                name: "<a href='mock_inventory.htm?id=1'>Ground Beef</a>",
+                category: "Meat",
+                onhand: '17',
+                unit: 'Lbs',
+                cost: '$3.99',
+                reorder: false,
+                actions: "<a id='deleteIcon1' href='javascript:inventoryList.deleteRow(1);'>Delete</a>"
+            },
+            {
+                id: 2,
+                name: "<a href='mock_inventory.htm?id=2'>Ground Turkey</a>",
+                category: "Meat",
+                onhand: '4',
+                unit: 'Lbs',
+                cost: '$2.99',
+                reorder: true,
+                actions: "<a id='deleteIcon2' href='javascript:inventoryList.deleteRow(2);'>Delete</a>"
+            },
+            {
+                id: 3,
+                name: "<a href='mock_inventory.htm?id=3'>Chicken Breast</a>",
+                category: "Meat",
+                onhand: '11',
+                unit: 'Lbs',
+                cost: '$1.99',
+                reorder: true,
+                actions: "<a id='deleteIcon3' href='javascript:inventoryList.deleteRow(3);'>Delete</a>"
+            },
+            {
+                id: 4,
+                name: "<a href='mock_inventory.htm?id=4'>Cheddar Cheese</a>",
+                category: "Dairy",
+                onhand: '1',
+                unit: 'Lbs',
+                cost: '$1.99',
+                reorder: true,
+                actions: "<a id='deleteIcon4' href='javascript:inventoryList.deleteRow(4);'>Delete</a>"
+            },
+            {
+                id: 5,
+                name: "<a href='mock_inventory.htm?id=5'>Tomatoes</a>",
+                category: "Produce",
+                onhand: '14',
+                unit: 'Units',
+                cost: '$1.00',
+                reorder: false,
+                actions: "<a id='deleteIcon5' href='javascript:inventoryList.deleteRow(5);'>Delete</a>"
+            },
+            {
+                id: 6,
+                name: "<a href='mock_inventory.htm?id=6'>Potatoes</a>",
+                category: "Grains/Starches",
+                onhand: '23',
+                unit: 'Lbs',
+                cost: '$.39',
+                reorder: false,
+                actions: "<a id='deleteIcon6' href='javascript:inventoryList.deleteRow(6);'>Delete</a>"
+            }
+            ];
+
+
+            $(document).ready(function () {
+                var reorderFunction = function (bool, primaryRow) {
+                    if (bool)
+                        return "<img src='alert" + (primaryRow ? '2' : '1') + ".png' />";
+                    else
+                        return "";
+                }
+                var func1 = {};
+                func1["reorder"] = reorderFunction;
+                site.ui.populateTable("grid", inventory, func1);
+            });
+            return {
+                filter: function (sel) {
+                    var idx = sel.selectedIndex;
+                    var category = sel[idx].text;
+                    var grid = document.getElementById("grid");
+					var previousRow = "";
+                    for (var i = 1; i < grid.rows.length; i++) {
+                        var row = grid.rows[i];
+                        if (category == "All" || row.cells[2].innerHTML == category) {
+                            grid.rows[i].style.display = "";
+                        } else {
+                            grid.rows[i].style.display = "none";
+                        }
+                    }
+                },
+                deleteRow: function (idx) {
+                    var anchor = document.getElementById("deleteIcon" + idx.toString());
+                    var rowIndex = anchor.parentNode.parentNode.rowIndex;
+                    var grid = document.getElementById("grid");
+                    if (confirm('Are you sure you want to remove this item?')) {
+                        grid.rows[rowIndex].style.display = "none";
+                    }
+                }
+            }
+        }());
+    </script>
+</head>
+
+<body>
+<div id="underConstruction" class="modal">
+    <div class="modal-content">
+        <span class="close" onClick="document.getElementById('underConstruction').style.display = 'none';">x</span>
+        <div class="row"></div>
+        <div class="row">
+            <div class="col-3">
+                <img alt="Under Construction" src="/Content/Images/underConstruction.png" />
+            </div>
+            <div class="col-9">
+                This feature is coming soon! Feel free to browse around to get a feel for the feature.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 alignRight">
+                <input type="button" value="OK" onclick="document.getElementById('underConstruction').style.display = 'none'" />
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row alignRight">
+    <div class=col-12>
+        <a href="/Home/Menu">
+            <img src="home_icon.png" alt="home" title="home"/>
+        </a>
+    </div>
+</div>
+<div class="row alignCenter">
+    <h1>
+        Inventory List
+    </h1>
+</div>
+<div class="row">
+    <div class="col-12">
+        <span class="errorText">
+            </span>
+        <span class="informationalText">
+            </span>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        Select a category:
+    </div>
+    <div class="col-8">
+        <select id="category" onchange="inventoryList.filter(this)">
+            <option>--All--</option>
+            <option value="1">Dairy</option>
+            <option value="2">Produce</option>
+            <option value="3">Beverage</option>
+            <option value="4">Alcohol</option>
+            <option value="5">Meat</option>
+            <option value="6">Beans</option>
+            <option value="7">Grains and Starches</option>
+            <option value="8">Baking</option>
+            <option value="9">Bread</option>
+        </select>
+    </div>
+</div>
+<div class="row">
+    <table id="grid">
+        <tr class="row">
+            <th>
+                Id
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Category
+            </th>
+            <th>
+                On Hand
+            </th>
+            <th>
+                Unit
+            </th>
+            <th>
+                Cost
+            </th>
+            <th>
+                Reorder Alert
+            </th>
+            <th>
+                Actions
+            </th>
+        </tr>
+
+    </table>
+</div>
+<div class="row">
+    <div class="col-2">
+        <input type="button" id="add" name="add" value="Add Inventory" onclick="window.location.href = 'mock_inventory.htm'"/>
+    </div>
+</div>
+</body>
+</html>

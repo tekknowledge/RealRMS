@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>RMS - Create Menu Item </title>
+    <link rel="stylesheet" href="/Content/grid.css" />
+    <link rel="stylesheet" href="/Content/site.css"/>
+    <link rel="stylesheet" href="/Content/modal.css" />
+    <style type="text/css">
+        .inv {
+            width: 60%;
+        }
+    </style>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+    <script type="text/javascript" src="/scripts/site.js"></script>
+    <script type="text/javascript" src="/scripts/site.utility.js"></script>
+    <script type="text/javascript" src="/scripts/site.ui.js"></script>
+
+    <script type="text/javascript">
+        var menuLink = function () {
+
+            var menu = [
+                {
+                    id: 1,
+                    name: "Buffalo Wings",
+                    category: "Appetizers",
+                    description:'Deep fried chicken wings coated in a spicy hot sauce',
+                    cost: '$8.99'
+                },
+                {
+                     id: 2,
+                    name: "Mozzarella Sticks",
+                    category: "Appetizers",
+                    description:'Deep fried mozzarella served with homemade marinara sauce.' ,
+                    cost: '$6.99'
+                },
+                {
+                     id: 3,
+                    name: "Chicken Parm",
+                    category: "Entrees",
+                    description: 'Breaded chicken breast, deep fried, served over a bed of spaghetti and marinara sauce.',
+                    cost: '$16.99'
+                },
+                {
+                    id: 4,
+                    name: "Cheese Steak",
+                    category: "Subs",
+                    description:'Thinly sliced grilled sirloin steak with choice of cheese.',
+                    cost: '$7.99'
+                },
+                {
+                     id: 5,
+                    name: "Italian Coldcut",
+                    category: "Subs",
+                    description:'Sliced salami, capacolla, and priscuitto on a toasted sub roll dressed with oil and vinegar.',
+                    cost: '$7.99'
+                },
+                {
+                     id: 6,
+                    name: "Canoli",
+                    category: "Deserts",
+                    description:'Sweet Ricotta cream filling in a fried hallow dough shell.',
+                    cost: '$4.99'
+                }
+            ];
+
+
+        $(document).ready(function() {
+            //var id = site.utility.getQueryStringValue("id"); //window.location.href.split('=')[1];
+            //for (var i = 0; i < menu.length; i++) {
+            //    var item = menu[i];
+            //    if (item.id == parseInt(id)) {
+            //        document.getElementById("id").value = item.id;
+            //        document.getElementById("name").value = item.name;
+            //        document.getElementById("description").value = item.description;
+            //        document.getElementById("cost").value = item.cost;
+            //        site.ui.populateOptionByText("category", item.category);
+            //    }
+            //}
+        });
+        
+        function swap(dd1, dd2) {
+            for (var i = dd1.options.length - 1; i >= 0; i--) {
+                if (dd1.options[i].selected) {
+                    var option = document.createElement("option");
+                    option.text = dd1.options[i].text;
+                    option.value = dd1.options[i].value;
+                    dd2.options.add(option);
+                    dd1.options.remove(i);
+                }
+            }
+        }
+
+		return {
+		    filter: function(sel) {
+		        var selectedValue = sel[sel.selectedIndex].value;
+			    var availableRows = document.getElementById("avItems");
+			    for (var i = 0; i < availableRows.options.length; i++) {
+			        var option = availableRows.options[i];
+                    if (selectedValue == "") {
+                        option.style.display = "";
+                        continue;
+                    }
+                    if (option.dataset.category.toString() == selectedValue) {
+                        option.style.display = "";
+                    } else {
+                        option.style.display = "none";
+                    }
+			    }
+		    },
+		    assign: function () {
+		        var assigned = document.getElementById("linkedItems");
+		        var available = document.getElementById("avItems");
+		        swap(available, assigned);
+		    },
+
+		    revoke: function () {
+		        var assigned = document.getElementById("linkedItems");
+		        var available = document.getElementById("avItems");
+		        swap(assigned, available);
+		    }
+		}
+	}();
+    </script>
+</head>
+
+<body>
+<div id="underConstruction" class="modal">
+    <div class="modal-content">
+        <span class="close" onClick="document.getElementById('underConstruction').style.display = 'none';">x</span>
+        <div class="row"></div>
+        <div class="row">
+            <div class="col-3">
+                <img alt="Under Construction" src="/Content/Images/underConstruction.png"/>
+            </div>
+            <div class="col-9">
+                This feature is coming soon! Feel free to browse around to get a feel for the feature.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 alignRight">
+                <input type="button" value="OK" onclick="document.getElementById('underConstruction').style.display = 'none'"/>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row alignRight">
+    <div class=col-12>
+        <a href="/Home/Menu">
+            <img src="/content/images/home_icon.png" alt="home" title="home" />
+        </a>
+    </div>
+</div>
+<form method="post" action="mock_menu_items.html?message=Your item has been saved.">
+
+    <div class="row">
+        <div class="col-12 alignCenter">
+            <h1>Link Inventory</h1>
+        </div>
+    </div>
+    <div style="width: 100%; height: 100%;">
+        <div class="row">
+            <div class="col-12">
+                <span class="errorText">
+                    </span>
+                <span class="informationalText">
+                    </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 alignRight">
+                Select a category:
+            </div>
+            <div class="col-8">
+                <select id="category" onchange="menuLink.filter(this)">
+                    <option>--All--</option>
+                    <option value="1">Dairy</option>
+                    <option value="2">Produce</option>
+                    <option value="3">Beverage</option>
+                    <option value="4">Alcohol</option>
+                    <option value="5">Meat</option>
+                    <option value="6">Beans</option>
+                    <option value="7">Grains and Starches</option>
+                    <option value="8">Baking</option>
+                    <option value="9">Bread</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+
+            </div>
+            <div class="col-4">
+                <p>Linked:</p>
+                <select id="linkedItems" name="avRoles" multipe size="5" class="inv">
+
+                </select>
+            </div>
+            <div class="col-1">
+                <p>&nbsp;</p>
+                <input type="button" value=">>" onclick="menuLink.revoke()"/><br/>
+                <input type="button" value="<<" onclick="menuLink.assign()"/>
+            </div>
+            <div class="col-4">
+                <p>Available</p>
+                <select id="avItems" name="avItems" multiple size="5" class="inv">
+                    <option value="1" data-category="1">Milk</option>
+                    <option value="2" data-category="1">Butter</option>
+                    <option value="3" data-category="1">Cheese</option>
+                    <option value="4" data-category="1">Eggs</option>
+                    <option value="5" data-category="7">Potato</option>
+                    <option value="6" data-category="5">Sirloin</option>
+                    <option value="7" data-category="2">Onion</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 alignRight">
+                Id:
+            </div>
+            <div class="col-9">
+                <input id="id" readonly name="empId"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 alignRight">
+                Name:
+            </div>
+            <div class="col-9">
+                <input id="name" name="name" type="text" required/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 alignRight">
+                Category:
+            </div>
+            <div class="col-9">
+                <select id="category" name="category">
+                    <option value="">--Choose One--</option>
+                    <option value="1">Appetizers</option>
+                    <option value="2">Soups</option>
+                    <option value="3">Salads</option>
+                    <option value="4">Subs</option>
+                    <option value="5">Entrees</option>
+                    <option value="6">Deserts</option>
+                    <option value="7">Beverages</option>
+                    <option value="8">Alcohol Beverages</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 alignRight">
+                Cost
+            </div>
+            <div class="col-9">
+                <input type="text" id="cost" name="cost"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 alignRight">
+                Description
+            </div>
+            <div class="col-9">
+                <textarea id="description" name="description" rows="10" cols="50"></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6 alignRight">
+                <input type="button" name="Cancel" value="Cancel" onclick="window.location.href = 'mock_menu.htm';"/>
+                <input type="button" name="next" id="next" value="Inventory" onclick="window.location.href = 'mock_menu_item_inventory.htm';"/>
+                <input type="submit" name="save" id="save" value="Save" onclick="menu.submit(window.event)"/>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+
+</html>

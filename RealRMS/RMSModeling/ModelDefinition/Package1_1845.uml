@@ -1,0 +1,1549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="420c8ee7-ff8c-4acb-b331-e4bd3854fddf"
+  name="Models"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="db494154-db5d-4234-b88a-c4d3783d6b96"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DRealRMS.Models"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="14ba98c4-8f6a-45d2-8062-063baf4deea0"
+        name="UserInfoModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="8eb3d4de-09a2-4447-9601-3e1ac6282970"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Models Type%3DUserInfoModel"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="9c77cf08-6fd6-463b-a95f-0671f4dbc70f"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c79ffdb6-1e85-4e8e-8110-cda3816ce17e">
+                <propertyInstance
+                  Id="a7cf5042-f483-4935-b885-1fc6fb8c6c21"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2c05029d-11a6-4818-86d2-25d93aa86b1a">
+                <propertyInstance
+                  Id="69ffa1cf-7690-4ba2-8eb4-e2aa09c8690a"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7dc70214-fff8-4be9-a52c-133582c82f8d">
+                <propertyInstance
+                  Id="4ecd98f7-2857-40a1-b1f8-72a7155433f7"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2b5174a1-8e18-41d3-973d-aec48fb12b78">
+                <propertyInstance
+                  Id="f105a099-3111-4b0a-9ba2-047127b03966"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3616e0ca-a162-466c-a938-d609d94a0c0a">
+                <propertyInstance
+                  Id="d770b933-5363-4c7a-9f04-e1b8a3684514"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="0f724dc4-bb9d-4a16-bb46-952b0cd9c13b">
+            <interfaceMoniker
+              Id="0d17f6c3-c75b-4848-8759-6a2f7ef3372e"
+              LastKnownName="IRMSEntity"
+              LastKnownLocation="Package1_1845.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="1149f9ca-d9e7-49ac-9036-ee1f6e134ab0"
+            isDerived="false"
+            sourceEndRoleName="UserInfoModel"
+            targetEndRoleName="DateOfBirth"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="cc335bd2-e586-4f1f-8bdd-924c5ab3bc5c"
+              LastKnownName="DateTime"
+              LastKnownLocation="Package2_1845.uml" />
+            <description>Property DateOfBirth references type DateTime.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a2602bb3-dd73-4b6f-b6f9-65b009caef42"
+                  name="UserInfoModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="aea963f4-9b5b-438e-89e9-63c8bfd0dab8"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="63b122f2-a290-43be-a085-4fcb6e75621c"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d97a6bcf-8843-4aee-a1e7-788d06013e0a"
+                  name="DateOfBirth"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="982c9797-d69f-48b1-a3bd-59b8d2439362"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="437a6eb0-5633-42a9-bd4f-62962c6daf6e"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="dd1251fe-9991-4560-9d70-b0d63689d1af"
+            name="City"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="30e80ece-8d82-45df-8894-767b50eb9179"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Models Type%3DUserInfoModel Member%3DCity"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6ee65647-2725-4dff-b9eb-6df5efbaed9c"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f1e2ddf-19f0-4df6-b299-d4b0b87c07ac">
+                    <propertyInstance
+                      Id="d1544248-6393-41ef-93df-e256de5e8ddc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c43d01ad-f595-4205-a5b2-bfef24207d5a">
+                    <propertyInstance
+                      Id="55524c92-69f3-4e5c-a550-8ee259ca1bfb"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3fe56a2e-760a-4fd2-b5a3-c4cd532de57a">
+                    <propertyInstance
+                      Id="88171836-e31e-4369-a454-7b696fb891ee"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ca8bce0-22b7-45ed-860e-a1d3ecf9993a">
+                    <propertyInstance
+                      Id="27fe71a5-a012-492c-921e-b9d0df7ce516"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="38fa2ed0-6ff3-43fd-80d4-24889ce1dad6">
+                    <propertyInstance
+                      Id="cfb18bf4-c580-4dd7-8551-f3c2d955c21d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="383028ab-e715-4ec5-9f35-e1dcca63a96c">
+                    <propertyInstance
+                      Id="a50a68fa-7839-42ee-a39a-136669aa6e37"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9256ed51-b261-4ea1-80b4-c1c62936697f">
+                    <propertyInstance
+                      Id="7d44cfd8-a9ae-445b-83f9-2cb98795c9b3"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="RMSModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="289acaab-078a-449c-b203-df5e237579e8"
+            name="ConfirmPassword"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="7cd62b4b-36e6-464f-b6f3-66efdc3f5642"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Models Type%3DUserInfoModel Member%3DConfirmPassword"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7c60e885-a1c7-419a-898a-e93eac327a79"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e8195f4-c3ef-45c5-b2f2-1a6f9729f3c2">
+                    <propertyInstance
+                      Id="1773ac1c-b09e-41a6-be07-683416950e24"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e940f53d-7b21-448e-8512-2f2ce50bd42d">
+                    <propertyInstance
+                      Id="a204ed8a-1a72-4a15-b9c4-f660c417d825"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c1508e9d-d289-492c-9737-e1385e7dbf5f">
+                    <propertyInstance
+                      Id="3f3f1a7f-6f25-4119-a13e-c31c2ff42982"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ae5baf6b-eec9-45cb-a65a-b6537bf001d5">
+                    <propertyInstance
+                      Id="b91d68b0-6b86-4016-b5db-00b0c3c6838f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0ec988ce-2b65-4234-874e-fb3bf8e9af18">
+                    <propertyInstance
+                      Id="265940b7-b3ef-4fd3-84d4-c1b508a81475"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe1a770e-7ad5-4c06-a89b-16c10a5dd9ab">
+                    <propertyInstance
+                      Id="f73c5ea5-1282-4aff-a929-1f458c26033c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c847a0bf-f768-4643-ac1d-867be149a0c7">
+                    <propertyInstance
+                      Id="c30ec166-5744-48c4-aba7-e0ca865ab46f"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="RMSModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="64740929-36cb-4b4a-a864-9c782d403f8f"
+            name="DateOfBirth"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="ac7f2342-697f-4c04-992b-994f803c0f78"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Models Type%3DUserInfoModel Member%3DDateOfBirth"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ec95608b-0437-458f-81e1-6a14458d27b9"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2135e6d4-18d9-4fdd-be0d-5934ed9dd3f3">
+                    <propertyInstance
+                      Id="f2c506a5-e7a4-4785-bb49-dfd5f2af0654"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="07f1f2ff-bc1d-4f8c-bfae-9a29474419e9">
+                    <propertyInstance
+                      Id="3bd8d172-e4b1-464f-9a16-6a03e3dee825"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="86c86a87-936c-4855-845c-359890c6ce2a">
+                    <propertyInstance
+                      Id="dd86a661-2d07-429e-a52c-7f893fd325b7"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0bfe3686-1928-4304-ac38-a97cf252eec6">
+                    <propertyInstance
+                      Id="6ae6116f-7629-42a8-935b-13b9ac71d489"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eb368388-1d1c-430b-bb68-a9753295b2e3">
+                    <propertyInstance
+                      Id="a6e7f2ba-330c-496b-a8c1-22de3bb95fd7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a2b3803-fb00-49fa-bf3d-adfef02f210b">
+                    <propertyInstance
+                      Id="d3ddd194-4cd5-4706-bd0c-279b11e4a1ca"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eb2c3f72-cf38-472b-ad4a-1a4b3beb80a4">
+                    <propertyInstance
+                      Id="891c6ede-fbdb-42c2-9b90-9b8bf2cb53e0"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="cc335bd2-e586-4f1f-8bdd-924c5ab3bc5c"
+                LastKnownName="DateTime"
+                LastKnownLocation="Package2_1845.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4ffad438-8dee-4ce5-b00c-7dfeb1268fa4"
+            name="Email"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="93ad14bb-420e-439d-ac29-c5f00359727d"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Models Type%3DUserInfoModel Member%3DEmail"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9d391422-398b-4665-983e-85bc66630db2"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9ae5f650-3fe6-4cb8-9b53-e7a9224f22f5">
+                    <propertyInstance
+                      Id="b48447d9-f36b-4682-86da-83919ae6521e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6ceee1aa-1b0f-4a3a-b3f3-9c4baf3919bc">
+                    <propertyInstance
+                      Id="dc2b4630-d90c-4254-8513-d57055e5e2a6"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3aa69998-cc9a-45c3-adb4-9686865decf5">
+                    <propertyInstance
+                      Id="2e50bb9d-c8dc-40a9-a23d-a076c2b9081d"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5a98cbc7-ab35-431d-96df-f9f6e8cd52ce">
+                    <propertyInstance
+                      Id="58d49829-caef-4b7f-9262-144d15b3b51d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9f368ea2-2589-457d-8789-3476523cb0fd">
+                    <propertyInstance
+                      Id="cdcf1c27-fd86-4831-85e6-c430d61d0b14"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="06b5de11-17a4-46cf-aee3-6c2088204aa4">
+                    <propertyInstance
+                      Id="35c38b16-a3b3-4484-82cb-f63f92d19662"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d47087f-e99a-4a02-99f5-c071bb7107f4">
+                    <propertyInstance
+                      Id="73fd9bf0-fdfc-4f6c-94d5-6743c9f26638"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="RMSModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="0020ba4f-c7c4-4667-8e50-d32165117da0"
+            name="FirstName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="d59532ac-a08e-49e8-9563-618e971ba261"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Models Type%3DUserInfoModel Member%3DFirstName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="47aa674d-979d-480b-86af-f7faa50d291a"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff88e445-6809-4707-8cf4-748d486e5c1c">
+                    <propertyInstance
+                      Id="a8c2d1e8-6f56-487e-b30f-24299992d5c5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="42bd5ca3-3f3e-4bed-9320-46cec4d8e3be">
+                    <propertyInstance
+                      Id="f1e37f33-30bf-4ac3-9730-2d9ccc418242"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12e4b001-b205-474f-b795-daeb9e1619aa">
+                    <propertyInstance
+                      Id="d5ee172c-1de8-46c1-a609-5e06252dc172"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b0b72c46-0b04-41b7-9faa-bf984389af86">
+                    <propertyInstance
+                      Id="3a1b7b2c-8056-43ae-ae60-419504497262"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e7f3b7e-ac5b-4d3b-b5ab-1f352658b466">
+                    <propertyInstance
+                      Id="f1d4b24e-1f2b-4843-9fd8-d46b496f1733"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a42e8835-1111-4c54-bdb0-8556b7712ee0">
+                    <propertyInstance
+                      Id="54f42fc5-70de-4be9-b49f-dd0edf0ae286"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="146b6c71-9182-41ff-990a-2af615f5b342">
+                    <propertyInstance
+                      Id="c48f96fa-bce4-47ee-8459-fca05e9b5369"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="RMSModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="862689fb-391a-467e-8475-823fcea2da0b"
+            name="FirstTimeSetup"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="37256e0d-5cd4-494c-9770-4855596fe8ef"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Models Type%3DUserInfoModel Member%3DFirstTimeSetup"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6611e98c-b729-48bc-a549-fa0bd39dc7b5"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f673d09f-5da0-445c-996c-b57f05e89a9e">
+                    <propertyInstance
+                      Id="c6490f14-7cdd-4b7f-b4b8-19cb35e9ba0c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="14d7470b-4904-4890-8cf7-898fbbaf4740">
+                    <propertyInstance
+                      Id="222eb679-5814-44a1-8ae9-c587985fd901"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee1acce5-4ef3-4cc0-b0cc-6d456d77b54c">
+                    <propertyInstance
+                      Id="ae476d2d-b170-45f5-8117-26d25589e654"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4cf6c889-8aea-4422-b7ee-518de37425d8">
+                    <propertyInstance
+                      Id="0c7a970d-99d3-45f2-98e7-1de90e5281ec"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c4b99b29-9e85-4585-ba70-7bd71b7d287d">
+                    <propertyInstance
+                      Id="dcc0d848-bcda-41ba-83b9-ef54fa5ed360"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fedada47-1299-49c6-97a5-51eca7b7a7db">
+                    <propertyInstance
+                      Id="3af63472-6ad6-4763-866d-fc906b01a206"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b429ab5-cd6e-4a4c-9315-a4d9264572bc">
+                    <propertyInstance
+                      Id="7ecdc2b7-cad4-4305-a6ca-5c117e1456d5"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="RMSModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="45041332-7733-4583-aa52-d9841c57aa0d"
+            name="HasAccount"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="893c9534-c10c-42cb-9ca9-3bfadbc5b465"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Models Type%3DUserInfoModel Member%3DHasAccount"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1f124943-d5ad-472c-8827-cf34217d7929"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ec14acda-a570-4587-8e06-1f16a146811c">
+                    <propertyInstance
+                      Id="bcb7b77b-bdd2-4a89-bd40-587acef43a7d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8ad78b0-617b-492a-8461-9c9466eba243">
+                    <propertyInstance
+                      Id="c38301f8-7a3d-40fa-9b92-a98a12b1982c"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="21a0a619-957d-4c89-b978-ddf4e672299a">
+                    <propertyInstance
+                      Id="00da795d-4440-466e-8653-8e5116ee0118"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f419ee01-1a0b-4132-b1cb-e26d32eb0870">
+                    <propertyInstance
+                      Id="6b1b2f79-d4d8-4f8b-b45a-ede40818a71f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="88047ff6-a269-458d-baf1-5a0a6334fd5c">
+                    <propertyInstance
+                      Id="7d6d21a8-5d98-4b50-a9bf-4683f4a77cc7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4900064b-d277-4d3f-8ebe-aedd7efc2dc5">
+                    <propertyInstance
+                      Id="30b7e350-7f6f-4239-bc01-4aca3af26a5e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8931086-c4f8-44cd-a5d9-9d37e2895da6">
+                    <propertyInstance
+                      Id="366af941-1510-4093-bedf-52c20dee9682"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="RMSModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b37077d8-fdbe-4c26-b175-7112bf134658"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="e53666d7-e78f-48f9-8f1f-a7f70f2bcd26"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Models Type%3DUserInfoModel Member%3DId"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="959b32d0-d370-4462-bccc-bd570f7ac922"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="823233f5-ccd6-4c2a-b442-489a50fa7280">
+                    <propertyInstance
+                      Id="eaf046fc-d404-44fa-8970-97cae9538335"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a660ff3a-703a-4a45-8839-df8daffb9a24">
+                    <propertyInstance
+                      Id="0e6646bf-9fd6-425e-aeb2-301f3a09bb5f"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="618730e6-449e-4f51-b903-a7e753dea9ff">
+                    <propertyInstance
+                      Id="117f35e4-21ac-4c59-9547-be2e7823c923"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7236ee2d-9ac5-449d-bc09-49f2085cf0ad">
+                    <propertyInstance
+                      Id="cefcf509-9d32-4d88-b031-f0c92dc5a936"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="afc9c8d7-9720-4408-a642-3038f26e5140">
+                    <propertyInstance
+                      Id="521f09a9-60fd-400b-8db0-38e698d2de67"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="00e06bc8-fa87-4faa-9e5d-365316692ba6">
+                    <propertyInstance
+                      Id="ea56e994-faa8-4fa8-a79f-bca28c2d62df"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="173cb02d-86fc-47a5-a141-28c5c2d5196f">
+                    <propertyInstance
+                      Id="b9c7f3be-fe20-41e2-a9cf-e01059a81e77"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="RMSModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="517efde6-7a0a-4a12-82aa-a84c3f0cdab9"
+            name="LastName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="ad1bb1a0-21fa-49c4-ba9e-20bcb345d996"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Models Type%3DUserInfoModel Member%3DLastName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="beacda38-41af-499a-8407-33e62cb81c15"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf02e384-c837-4726-ab4b-88950f8a91c6">
+                    <propertyInstance
+                      Id="ebc15719-951a-4eb9-a2e8-98afe8addc28"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9560768-63d8-471a-9976-cada0a506e73">
+                    <propertyInstance
+                      Id="5f23c262-7641-4a65-9b61-927566611955"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f9eda430-7687-40fd-a3c6-e9dededb23a8">
+                    <propertyInstance
+                      Id="d6bc9494-b92b-409c-aaf8-8bcf60026a57"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9fd741f1-cf79-4d60-bf58-fcbb27d423ec">
+                    <propertyInstance
+                      Id="dd6a191b-3be3-41aa-b2a4-b651eee1ef03"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b9dd9201-ecf7-4dab-a1b9-1895085f0c23">
+                    <propertyInstance
+                      Id="bd2b2a42-6d06-4627-bc11-defa00adfe7e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b9df288-c6a2-40ae-8f1c-c57ff5cb0aa3">
+                    <propertyInstance
+                      Id="45deace6-f847-4b6c-b3cd-7ad5e7edcde2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="05962479-a5ba-42a5-acb2-a16ed5d94cae">
+                    <propertyInstance
+                      Id="bfeedcd2-5554-438e-bd6f-b7327128023f"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="RMSModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="6a2f599f-f727-4a35-b5f0-bb8de8e7c5d3"
+            name="Password"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="a46516e5-3c3c-4644-93d6-25aae830d7a9"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Models Type%3DUserInfoModel Member%3DPassword"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a4bd7e6d-ea11-4007-a203-7893aefbbdcb"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="46d3b8f6-c6ff-42ce-9cf1-3d73cfa76488">
+                    <propertyInstance
+                      Id="5e56c88a-f102-4326-a488-1597048df396"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c035aed-1b97-451c-a561-03648fbf7e16">
+                    <propertyInstance
+                      Id="cbfb5363-0eaf-469a-ab48-23c93edb5261"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="58189b55-386b-463c-93ec-2f4808fb7f68">
+                    <propertyInstance
+                      Id="65597d6f-9c2e-4ae7-9cbb-c3aec81b51dc"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d39fdcd4-4152-415d-b1a1-638f42bd23c3">
+                    <propertyInstance
+                      Id="867b1fd8-1aed-4fe2-9bd2-057933b8eb6b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d16516ca-f7ca-4dfd-b7c6-347d6dad9a28">
+                    <propertyInstance
+                      Id="e9b94684-3ecd-477d-aa48-528f1973ea3f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b66e3023-8ab4-4541-b309-f063e4a7247c">
+                    <propertyInstance
+                      Id="23081512-7927-49e3-a6dd-219331739a1b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ccf3b9f2-12c3-42e0-a9a5-e3b0e1b2ccda">
+                    <propertyInstance
+                      Id="1a77c720-b3db-47d5-bd7d-50abf2c8edc3"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="RMSModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5cd1326a-9939-4ac3-80f2-cdd4b81594de"
+            name="Phone"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="2d8a5bf5-8b24-4dd6-b82d-5e0da4a9b529"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Models Type%3DUserInfoModel Member%3DPhone"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8ac8a56a-4c66-4000-be56-2f2edfd87813"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="56ed4a5f-a215-4143-996b-63db03569c3a">
+                    <propertyInstance
+                      Id="aa25ee99-1afa-4557-b959-d272868258bd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a972b60-c8fa-435a-baf8-f9030a460be3">
+                    <propertyInstance
+                      Id="fe833a69-f26c-49e4-a6bb-494917c9a491"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c8572f7-63bb-46a8-a0a8-b03daae50ae8">
+                    <propertyInstance
+                      Id="6bd77b1c-8e29-4021-a30a-7ad4ffe1cfc7"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dfb2e7dc-493e-458b-8f92-334dc591cc3d">
+                    <propertyInstance
+                      Id="e8c64b29-e043-485e-9584-0abb66966095"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="30b61037-e707-4e46-804e-91f510814938">
+                    <propertyInstance
+                      Id="424a4464-5ddc-4dcc-9b9a-12e755088132"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29901665-2f4e-494e-8beb-7c7d80db17b6">
+                    <propertyInstance
+                      Id="08457536-7530-4afe-ac50-dd0a8293467c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="efab193e-3cec-454a-b80b-4bb536c5f331">
+                    <propertyInstance
+                      Id="7c81815b-1d3d-4776-b364-642273a5c8fe"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="RMSModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d83d4cba-5706-4333-847e-1760b694ae37"
+            name="Salt"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="9cd649f3-0609-40ac-be29-1f7c4ca82cae"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Models Type%3DUserInfoModel Member%3DSalt"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f8eca167-485d-4caf-a7e7-99e44cfff274"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a229b26-40b2-4a95-9239-f690bb9be1a6">
+                    <propertyInstance
+                      Id="1adeab7c-ce31-4c99-983d-7de720ca6bdc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="77f91209-9341-4f5c-9bc8-f5a8a1e2fad2">
+                    <propertyInstance
+                      Id="0f8a3aa6-5121-4976-8493-8140a1950cb9"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3097b9e7-f505-4f1a-a92f-bad7ea9182b2">
+                    <propertyInstance
+                      Id="d3f4da6e-5109-48d4-a0a9-69997f6c6076"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0fbaeccb-2c61-480c-8c82-06b408663388">
+                    <propertyInstance
+                      Id="56f6016e-db42-41ef-9a6f-ced8dda8668d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="57e241a8-54e0-4b27-8098-764cb353d7fc">
+                    <propertyInstance
+                      Id="da4cfbcf-dcd6-4cdd-a1ac-7f5b53a62df1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="977c2680-6952-4f17-b2b4-83c680d5b2a2">
+                    <propertyInstance
+                      Id="e343ec6a-2ce2-40e2-9e1c-7800360d1d1e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f65afe3-797c-477d-a660-462298d49731">
+                    <propertyInstance
+                      Id="339fa18a-b5db-46c7-98f3-fda1fd97e7f5"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="RMSModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b51cc6d1-890b-44ab-a2dc-48c1500e987e"
+            name="State"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="d93b6309-b2a8-4af4-b50d-35bcd23fc117"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Models Type%3DUserInfoModel Member%3DState"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="469b9243-7219-4faf-bce3-d5a4dd9a91d9"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b98d02f-770b-4df5-948f-e880cc506b1e">
+                    <propertyInstance
+                      Id="4f4077bb-5f51-498b-9817-a45dd664cb0d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4000740f-f225-44af-ac84-3014b48dd2ac">
+                    <propertyInstance
+                      Id="857ce23c-28a6-4e7a-bd56-cefa2ccd407d"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="129ab86f-4fcc-43ff-8df1-d03438c755b4">
+                    <propertyInstance
+                      Id="161f9f27-d2d4-4abb-bedd-864d6da25ecf"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e908a232-4c09-42e4-9422-42fd5f3ebd06">
+                    <propertyInstance
+                      Id="3cb06780-da8d-427d-a951-16bb8c16a43a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="689a6b8a-35df-468c-8e54-eecf05d5950b">
+                    <propertyInstance
+                      Id="8dace3d9-5e12-4fed-af28-9da1dd51d70a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45b5c947-cc56-41e1-9b49-063dd8b3330e">
+                    <propertyInstance
+                      Id="04da4325-db92-4186-8331-1b3a5d36ff4e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dae948e5-757b-4e74-aace-805bf656da73">
+                    <propertyInstance
+                      Id="bc887696-b4d0-430c-b11e-4846ce545dce"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="RMSModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="cc5289ab-3cae-4280-be8b-96a8e7a9e5ba"
+            name="Street"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="f5728378-6ddd-473e-b71c-8250143a4df4"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Models Type%3DUserInfoModel Member%3DStreet"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="26fb115b-5f35-48bc-9f42-225a9e7ac72c"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a3637c48-56fe-4f35-abc5-fb23897f2b10">
+                    <propertyInstance
+                      Id="ccca4737-4435-47c5-a8d6-e0c79aba1267"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10bf5fc7-c691-4bf7-9254-a34000c8f688">
+                    <propertyInstance
+                      Id="485e27b3-63eb-441c-be0d-53c8c4eb3cbc"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="88ed3fad-4134-4ef9-a155-898e1fe8d187">
+                    <propertyInstance
+                      Id="a27a0ab4-1962-411b-888d-932af9929285"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5812e0ff-8f6a-44e1-8d3e-c9f9f01eaa6a">
+                    <propertyInstance
+                      Id="6c99c472-74ff-4028-aea1-bf8e05d8afb5"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7fea72c6-35b1-48d8-a678-af7914d651ca">
+                    <propertyInstance
+                      Id="55397bca-f3c4-4a11-b859-2573783672db"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="58ee2c09-0a12-445d-9299-2e1e0c16426a">
+                    <propertyInstance
+                      Id="9e8fb21c-d3d8-4642-8303-258561095466"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="89f06032-4e44-45ba-9355-52685f6f61e8">
+                    <propertyInstance
+                      Id="90d11a2f-3f9e-496c-8424-f69ffa20b27b"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="RMSModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="0107cee3-a6ea-4c59-867b-14c98276fd2a"
+            name="UserName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="797436ae-5eae-4b85-981c-44426986febd"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Models Type%3DUserInfoModel Member%3DUserName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="257828c7-9e16-4752-ae90-3646f6b74261"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9502a16c-e94e-479c-922b-293252cf7099">
+                    <propertyInstance
+                      Id="b6b806ba-0f35-4360-bf8b-340a2a027af1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="73148e35-f7db-483b-950a-a662cf876a45">
+                    <propertyInstance
+                      Id="26c917fc-c724-4e78-a3f5-7d458291c00b"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45edc1c4-300a-4c8c-9912-29e10d9f29a2">
+                    <propertyInstance
+                      Id="7013059b-cd51-4308-9183-e68e501d5aa8"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="efe43f7a-426a-47b9-8e35-8fb903c16425">
+                    <propertyInstance
+                      Id="f9846f72-afb5-4b25-915a-46620c02bfa1"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b412e99f-2271-4210-8101-76c14d2893db">
+                    <propertyInstance
+                      Id="61f1e080-3de5-4cd0-8ed9-c99c299dbfac"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f563de0-1aae-42f8-967c-7e8bacd52f6d">
+                    <propertyInstance
+                      Id="e3cbfadc-0bb8-4bb1-a530-9b3f79567359"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3878f813-a1d1-42a0-9d7a-100eb1060927">
+                    <propertyInstance
+                      Id="e0d50ef6-3bef-48e0-b76d-417741fc7fbf"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="RMSModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c9fdeb74-2f13-4433-88cb-bfe7d565a5e7"
+            name="Zip"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="60f554c0-24fa-46b5-b371-2809755d84fd"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Models Type%3DUserInfoModel Member%3DZip"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="83123c00-99c9-4f07-b7e0-ab2e2c761649"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f0d57d86-082e-4bdc-aa8e-58cf927a6675">
+                    <propertyInstance
+                      Id="bbb92b6e-0d8b-46b9-b5dc-b152a2e72240"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d6853adb-9d99-406d-a590-be8abd1a814a">
+                    <propertyInstance
+                      Id="7901e715-7e0e-4469-94e0-5ca1582275fb"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b9ea012-667d-4aef-a618-7585bafff43f">
+                    <propertyInstance
+                      Id="c1c6b73f-ca19-4631-8a5b-4997a01f51e9"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="917498c1-aed8-456a-93e3-145a2506cad2">
+                    <propertyInstance
+                      Id="f568ff38-bd16-4fde-a970-886a3a424552"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="798dfc7b-fd09-4821-afab-4bec3e6ccbef">
+                    <propertyInstance
+                      Id="c083e865-33fe-4775-b3ff-1ee9cde49d74"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82df0a32-8b8f-4a9f-a569-9b4d569d90b9">
+                    <propertyInstance
+                      Id="3b3fdf3e-5640-4044-95d2-ab1ef2b4bd5b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d30a128c-641e-4cd8-8afe-041d30c6d042">
+                    <propertyInstance
+                      Id="abf1879f-801a-49b7-8668-b2a1477039ab"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="RMSModeling.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a9592e6e-5a59-423b-a34f-46a55821a9c0"
+            name="UserInfoModel"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="be3f9c0c-d6f4-4b1d-8d33-cb1768294a93"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Models Type%3DUserInfoModel Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9a5822a9-873c-4447-a8d3-f262ded162bf"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2f2de35-35b1-463e-bf85-42dc0ff25f2a">
+                    <propertyInstance
+                      Id="72eb05af-5933-48c3-a3b6-ba256d66689e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c8a06fce-0dea-4c68-acea-9fd9a5a14057">
+                    <propertyInstance
+                      Id="e3d5a2f5-e39f-43f6-86ab-b38d938992f6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8af44b69-22ff-45e2-895c-b05b7beacafb">
+                    <propertyInstance
+                      Id="bb3c5c47-3675-48a5-986f-244108692f58"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a3338f4e-58ba-41e3-87ec-87b527ab56d3">
+                    <propertyInstance
+                      Id="e1bce1b5-26d1-4a3f-943e-b803880f8227"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6db40354-45eb-4fdd-abc6-7e6fabac0b41">
+                    <propertyInstance
+                      Id="c6df6d3d-d4be-440d-98fc-887401f1f428"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="48ff4a7a-b424-4fc9-99e2-637cd9ee4d09">
+                    <propertyInstance
+                      Id="76d46211-ecb2-43d6-8f15-a00c83498a3e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="0d17f6c3-c75b-4848-8759-6a2f7ef3372e"
+        name="IRMSEntity"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="3473f7a4-c1ec-4b9b-8b48-d500ba3bfcb4"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Models Type%3DIRMSEntity"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c7849829-b703-4f89-a6ef-2c7f328be02e"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f0e7ba0a-b44c-4637-8f92-0a7a346ac589">
+                <propertyInstance
+                  Id="6ad6e033-2d93-48c6-aaa9-498acbef2836"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="04cb68fc-a04b-4663-9503-9d527d34a273">
+                <propertyInstance
+                  Id="dbd7dd2a-5bb3-4e3e-a600-90c6407d9442"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7da9dfd9-d569-43af-8d8c-d679b9269867">
+                <propertyInstance
+                  Id="d663a13f-af11-473c-810a-eece94b3db4e"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f8a24596-ae97-48ef-ba2e-74ef7ab35687">
+                <propertyInstance
+                  Id="b638a9cd-375b-4659-82c2-bdc3dded3bcf"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

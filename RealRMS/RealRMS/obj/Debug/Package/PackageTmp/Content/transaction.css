@@ -1,0 +1,54 @@
+﻿        .orderPane {
+            border-right: 2px solid black;
+        }
+
+        .orderedPane {
+        }
+
+        .orderItem {
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+        .orderLink {
+            display: block;
+            text-decoration: none;
+            margin: 0;
+            padding-left: 12px;
+            color: inherit;
+        }
+
+            .orderLink:hover {
+                background-color: yellow;
+            }
+
+        .menuList {
+            list-style-type: none;
+        }
+
+        .orderedList {
+            width: 85%;
+            border: none;
+        }
+
+        .itemDescription {
+            text-indent: 10px;
+        }
+
+        .orderedList .seatColumn {
+            width: 20%;
+        }
+
+        .orderedList .deleteColumn {
+            width: 10%;
+        }
+
+        .flankLeft, .flankRight {
+            display: inline-block;
+        }
+
+        .flankLeft {
+            width: 50%;
+        }
+        .flankRight {
+            width: 40%;
+        }

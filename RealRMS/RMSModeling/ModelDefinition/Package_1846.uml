@@ -1,0 +1,1249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="63e088ef-4311-4a31-8e24-6b21a7c21811"
+  name="Repository"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="04dfcb67-2c28-4ac8-a946-3cba1d975798"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DRealRMS.Repository"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="792d3d37-9f53-491b-b554-c3eccd12828b"
+        name="UserInfoRepository"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="e5f3583f-e0b5-4a1d-8f97-19cae670806e"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Repository Type%3DUserInfoRepository"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="46b1579d-0723-425e-8adb-566f9156c473"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6ef33eb3-3670-48f4-b3e1-0370188b0afa">
+                <propertyInstance
+                  Id="58fabb8a-f79d-456e-9ff8-e04b9fb2e748"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="936b6ea7-2cb5-429c-b606-97d94d6b98d3">
+                <propertyInstance
+                  Id="fedf7e8e-24dc-47a4-a6d6-71506542b35b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c41ba187-2ca2-49a3-9610-9e4e77a7a136">
+                <propertyInstance
+                  Id="3a6f0fa8-04bf-4956-8e5d-1c71a624411f"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3e4aa1f0-ced7-4bb3-8292-231c2ab56074">
+                <propertyInstance
+                  Id="0ba1a2c0-dde0-4878-a697-7683a8ab5ead"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0e0cd318-a020-44f7-9740-2ff0dfda5113">
+                <propertyInstance
+                  Id="f2bd540d-29cd-416a-a9df-8138c9aac495"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="e110f5b9-9de9-43e3-9a59-56b08030976d"
+            isSubstitutable="false">
+            <classMoniker
+              Id="75b10d36-24a3-432b-a7e5-91317e31d710"
+              LastKnownName="Repository&lt;UserInfoModel‎&gt;"
+              LastKnownLocation="Package_1846.uml" />
+          </generalization>
+          <generalization
+            Id="9a0b39d2-c185-4112-9ab5-97f24d837cc3"
+            isSubstitutable="false">
+            <classMoniker
+              Id="ba62cdef-2eb1-475e-bf8f-aaf001a94444"
+              LastKnownName="Repository"
+              LastKnownLocation="Package_1846.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="867e0799-6fff-4240-a491-e70db77fa528"
+            name="SALT_SIZE"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="5d051b69-b367-4d8f-92bc-a4277b2338aa"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Repository Type%3DUserInfoRepository Member%3DSALT_SIZE"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9c9b2fce-489f-4fbd-97cc-13d74483a08f"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b637bd3-6765-4bab-b04c-03069c53525a">
+                    <propertyInstance
+                      Id="591fca56-b426-405a-9389-8900cb46cddc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a577980-58dc-4bda-bfb3-8bfa3edb697b">
+                    <propertyInstance
+                      Id="e29babaa-3af8-468b-b238-ed80fce723f3"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5cb6a40c-5169-44a8-86d1-00bf049139af">
+                    <propertyInstance
+                      Id="5106bc01-ac8d-4cdb-ba35-fb82e1d0dd5f"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b3181400-43f3-400f-b674-6e25dd748ffc">
+                    <propertyInstance
+                      Id="a6055a23-b4c4-4b65-9324-df2d34c9e4f5"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a8ff3715-7d20-45bb-bd3b-67942b641688">
+                    <propertyInstance
+                      Id="e5f48ccd-797b-497d-826b-83ce21aad1f0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="cd844c58-5876-4e66-a4f4-f750a4e62900"
+            name="UserInfoRepository"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="76c7ab03-e705-4f26-9084-2c7b652c38f9"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Repository Type%3DUserInfoRepository Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS.Utility%2Fbin%2FDebug%2FRealRMS.Utility.dll&quot; Namespace%3DRealRMS.Utility Type%3DIConnectionFactory)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS.Utility%2Fbin%2FDebug%2FRealRMS.Utility.dll&quot; Namespace%3DRealRMS.Utility Type%3DISqlWorker)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f2281c01-e1cb-408b-8afd-de29cce4910f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e6205154-bdae-4c77-81b5-aaf5002222bf">
+                    <propertyInstance
+                      Id="09a1cf5c-81aa-4731-9b9c-e7698c474654"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dcb28937-6094-4def-b689-fbed2b1dc7af">
+                    <propertyInstance
+                      Id="77377136-9b5d-438c-bb84-977fa6b31d30"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="065b3bd6-6250-4a33-898b-b93b8780e6dc">
+                    <propertyInstance
+                      Id="12d779c1-1a74-4beb-b4dd-df603416352d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5aec59b8-fa55-4b00-9a55-a81b31e6adcc">
+                    <propertyInstance
+                      Id="d7395518-0ee8-4c32-bc51-88d92f885922"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="abb8a198-c5e3-479e-bb9d-b8f8f307bcb3">
+                    <propertyInstance
+                      Id="729513bc-0ec6-464b-ae6c-95b6fd8f103f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="60340610-9ace-4b00-9baa-b40efb4bcdd3">
+                    <propertyInstance
+                      Id="c57dd5f0-ac79-4f84-a104-d1ea72d1c78b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8e80fe8f-eba8-4108-8e9a-adb64190dbe3"
+                  name="conn"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8a0ff9e7-a730-4971-96ba-7afd4af108ad"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Repository Type%3DUserInfoRepository Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS.Utility%2Fbin%2FDebug%2FRealRMS.Utility.dll&quot; Namespace%3DRealRMS.Utility Type%3DIConnectionFactory)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS.Utility%2Fbin%2FDebug%2FRealRMS.Utility.dll&quot; Namespace%3DRealRMS.Utility Type%3DISqlWorker)]) ParameterIdentifier%3Dconn"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="bd27299f-d4eb-41d8-93f4-931da6609e4a"
+                      LastKnownName="IConnectionFactory"
+                      LastKnownLocation="Package1_1846.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b08ad974-ee38-4223-96f0-a8ad9ddcc9cc"
+                  name="broker"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="049fe5fa-17e6-49d7-ab42-40ea1ff612ca"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Repository Type%3DUserInfoRepository Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS.Utility%2Fbin%2FDebug%2FRealRMS.Utility.dll&quot; Namespace%3DRealRMS.Utility Type%3DIConnectionFactory)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS.Utility%2Fbin%2FDebug%2FRealRMS.Utility.dll&quot; Namespace%3DRealRMS.Utility Type%3DISqlWorker)]) ParameterIdentifier%3Dbroker"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="6f92a2a9-af41-4ea7-b7ad-0f3f5944b431"
+                      LastKnownName="ISqlWorker"
+                      LastKnownLocation="Package1_1846.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="21e189cb-319b-461d-8452-f6190c46aa31"
+            name="CheckPassword"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2765a514-30e3-4c27-b20f-54c0a3237bba"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Repository Type%3DUserInfoRepository Member%3D(Name%3DCheckPassword OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Models Type%3DUserInfoModel)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7da48d96-94d6-4f8e-a1b3-685d27513c98"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e899c71-984a-4240-bdf5-72551bef5d35">
+                    <propertyInstance
+                      Id="d1d5fe3f-582e-4a11-8490-c22390b9072a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0bd61f13-ac57-487f-b688-0216db48ea90">
+                    <propertyInstance
+                      Id="8cd731bb-c19c-43fa-bf08-3fef14145e98"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ff9e23a-dd77-47b7-85fe-f5948ddad471">
+                    <propertyInstance
+                      Id="ebfe2abe-93c8-4c5b-bdea-23fe5e7d8986"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12f2b48c-4845-4bd6-98bc-c43d6a94dd28">
+                    <propertyInstance
+                      Id="6acb3883-0cb8-4457-b1bf-41b4dbef60c6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c79c3256-2ba6-4019-9156-08fde142f8c9">
+                    <propertyInstance
+                      Id="dd0d69e1-9c49-4fbb-a799-0651bcbcb600"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2943d68-36a1-40f5-a56d-e469138b73aa">
+                    <propertyInstance
+                      Id="b15e9c5c-eb77-4ba0-8a99-99decdae209e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="14065d8d-050c-4f9b-9190-37537d912006"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="RMSModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="57a705a5-2c52-4bca-93e7-4789b506627c"
+                  name="m"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="9f4fea03-7a88-45a9-b846-3b7f55e43692"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Repository Type%3DUserInfoRepository Member%3D(Name%3DCheckPassword OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Models Type%3DUserInfoModel)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dm"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="14ba98c4-8f6a-45d2-8062-063baf4deea0"
+                      LastKnownName="UserInfoModel"
+                      LastKnownLocation="Package1_1845.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a7d91e72-26f0-42fe-9de5-10ec741d2854"
+                  name="password"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="14233eb3-ccd2-4a0e-aa86-67a241214e11"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Repository Type%3DUserInfoRepository Member%3D(Name%3DCheckPassword OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Models Type%3DUserInfoModel)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dpassword"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="RMSModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="710dfadc-01fc-46d1-9f0c-43383912290d"
+            name="Create"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="dd073b11-7737-47d4-9823-5bc886df04d0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Repository Type%3DUserInfoRepository Member%3D(Name%3DCreate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Models Type%3DUserInfoModel)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="525df019-2f53-4d4e-be1f-d0677e2e8a30"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="46b6c7ef-55ae-43f7-bbc5-4007bbc5173a">
+                    <propertyInstance
+                      Id="a4a16897-327a-45ab-8db5-59c21d3399e2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="383f45d4-a77e-4352-a134-8dfdfa87e0b4">
+                    <propertyInstance
+                      Id="d1018d68-67ef-4668-af01-3221f2529042"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b7686eb-8c82-4e92-a123-6518cbab2c31">
+                    <propertyInstance
+                      Id="c8a21fc7-a69e-41bf-82b3-4071e5773a78"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ab6b4f5-d3d3-43ed-a757-c04ce006ef5d">
+                    <propertyInstance
+                      Id="a6d92eee-c21b-481a-a36b-fef5ca3d42d6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a03a916b-6ecb-4d83-9425-933305b2bdce">
+                    <propertyInstance
+                      Id="21a5e419-4046-42df-bee6-0ba59cc0a1c7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="91e29a5f-2300-4174-ab27-5a63144d2ee0">
+                    <propertyInstance
+                      Id="23dfdadb-3e1d-44fc-aea0-d69ab14ee6ac"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="196e49a5-25d1-4be0-98f0-a7dd15048f65"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="RMSModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="97b03478-79a0-493c-93aa-4d67833c4b19"
+                  name="model"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3dca4e16-9f73-4184-8d5f-bc8574837c6d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Repository Type%3DUserInfoRepository Member%3D(Name%3DCreate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Models Type%3DUserInfoModel)]) ParameterIdentifier%3Dmodel"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="14ba98c4-8f6a-45d2-8062-063baf4deea0"
+                      LastKnownName="UserInfoModel"
+                      LastKnownLocation="Package1_1845.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f6f3d840-afd8-4a83-9f2d-a64d6f3b08ba"
+            name="CreateSalt"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="47d0544c-e341-4d79-9550-b7d7d3f0eda0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Repository Type%3DUserInfoRepository Member%3D(Name%3DCreateSalt OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3801bb4d-a312-42c9-a913-6dd9d6871007"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e8fee3a-c49b-4ba5-94ff-043fcd5ac313">
+                    <propertyInstance
+                      Id="05db53ae-8361-4bcb-b3a5-791db6fb0d47"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="de693053-9fa3-4a40-b657-151f95c6f2bd">
+                    <propertyInstance
+                      Id="90752d01-86e3-46de-bf30-3e4be8a13ce0"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8d82642-fd50-4236-9e19-91723c7f91c3">
+                    <propertyInstance
+                      Id="de2d04e1-54d4-4dfa-aeec-4009957c63ed"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f29888e6-4abd-4cbd-a664-da2753ff349a">
+                    <propertyInstance
+                      Id="4a31876a-c8c8-4e8b-9918-01d53de4a95b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0abba982-125a-4a93-8128-79f37067074b">
+                    <propertyInstance
+                      Id="79e14d2e-6b3b-44ed-9b6a-dce675d0015d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa6ef343-6147-42a4-8ec7-9cc8ab3e28f2">
+                    <propertyInstance
+                      Id="f1db2c69-184e-4423-9dba-764581b46fa2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="121d2317-723f-43ed-a044-05468cbcef87"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="RMSModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8bd5d07c-3728-4fe6-b3d0-b09f9c71c6f6"
+                  name="size"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="142a7ebd-549f-4b45-a527-e151f565362b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Repository Type%3DUserInfoRepository Member%3D(Name%3DCreateSalt OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dsize"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="RMSModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a10675c0-5d72-4267-a1ca-936960f2de2f"
+            name="GenerateHash"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6378ac1d-6171-4581-9ecb-868aa1e91a45"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Repository Type%3DUserInfoRepository Member%3D(Name%3DGenerateHash OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fe164a79-ed9b-44e9-8966-78df300e0aab"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="079dae69-0206-444e-b707-f822e3582b2e">
+                    <propertyInstance
+                      Id="1ee6d91c-b5fb-4acf-9665-4ac08f92a948"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3178248-5d75-4290-b85b-cf328b6dca6f">
+                    <propertyInstance
+                      Id="5159145a-7175-4710-a49a-dd6759da1cbc"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b88d8b7-5b0d-41b0-b96b-04e669110b05">
+                    <propertyInstance
+                      Id="eaff451c-f81c-41ba-ba42-efc75f6e33e1"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4e997c13-fe60-4220-95fc-b00622a1c712">
+                    <propertyInstance
+                      Id="651677b2-be23-4e20-95cc-80c36977b874"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eb1d85d9-aca3-45a9-9109-99afee48e4e5">
+                    <propertyInstance
+                      Id="bbf66d57-d3e2-4080-99bb-c632cbc904a6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e95e3aad-4345-4459-b8e8-26d9aa8cad00">
+                    <propertyInstance
+                      Id="57bfcb58-81a0-411c-984b-c5fd07574834"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="64249225-9bae-477d-853d-1c9cd51eb68a"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="RMSModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d4c45a22-b9cb-4edf-84ae-8a70de2f4270"
+                  name="password"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="aab8c985-b250-47be-a876-859a6cddaaa7"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Repository Type%3DUserInfoRepository Member%3D(Name%3DGenerateHash OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dpassword"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="RMSModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4550a568-e49c-43b2-9ded-23c6221459ae"
+                  name="salt"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5a781747-2203-43d9-87e0-a18b5d74e3ef"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Repository Type%3DUserInfoRepository Member%3D(Name%3DGenerateHash OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dsalt"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="RMSModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e611dd42-e316-4b99-a756-b18ac98ac981"
+            name="Get"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6b740ff5-59da-4317-a090-3dba01a208a9"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Repository Type%3DUserInfoRepository Member%3D(Name%3DGet OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="bd093a05-ee51-4fdb-bf29-50fe676f12bd"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a4238545-7307-4bce-a55e-bece7a9df3a9">
+                    <propertyInstance
+                      Id="a992e8b0-16e0-4ecf-911e-bc1681b5b7f5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a6ae905-5d54-4a0b-b349-979d59738fb7">
+                    <propertyInstance
+                      Id="7afd0e0a-8714-4533-81d7-83db8fa6e325"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="91e9f0e3-7045-474c-8e57-861960df9484">
+                    <propertyInstance
+                      Id="2cd185e2-6fd6-4237-b134-228f3e82920c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6e5c4f8d-8eb6-4cd1-ad86-4e776ed914fe">
+                    <propertyInstance
+                      Id="325159e6-252a-4730-97e2-330747489d1f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5718e553-786c-4f08-9f77-4452ab8fe428">
+                    <propertyInstance
+                      Id="bab2b73e-08da-4850-8046-9f2befb040ea"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd3a8c96-e0f0-48bc-812e-f659dc79a31e">
+                    <propertyInstance
+                      Id="c00a4ad7-0a34-48b6-a5b4-d7d19690a763"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e5a02e4a-8ba3-4ec3-b03f-5cbccdcbb4fe"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="14ba98c4-8f6a-45d2-8062-063baf4deea0"
+                      LastKnownName="UserInfoModel"
+                      LastKnownLocation="Package1_1845.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="51d66036-2396-4a8d-a926-7aa14a01ff7a"
+                  name="id"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="202b988d-eccb-400f-9fe7-c2cb3d9fbca2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Repository Type%3DUserInfoRepository Member%3D(Name%3DGet OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Did"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="RMSModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d92e5336-58e2-4261-b553-4f0c58cd6911"
+            name="Login"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="fbb1a7be-a4dc-4c3c-b77c-1d23ae1b8002"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Repository Type%3DUserInfoRepository Member%3D(Name%3DLogin OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b61ee870-95fc-4136-a05e-67dc7837d95a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c1029a4-8ca4-4951-848d-6146bf1ab067">
+                    <propertyInstance
+                      Id="52667387-4bc8-4a2b-b1c9-4737b505df80"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="26c8264f-01ee-445c-8d68-7d28a7b1110d">
+                    <propertyInstance
+                      Id="6742ddb2-f9bc-4528-b2f4-60b7db9a9e78"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="084a46db-2796-4c17-a0ab-e9d99f2ca40c">
+                    <propertyInstance
+                      Id="326a74e5-ca13-4610-9404-c6c459ad22d2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0be81ec6-9fa6-4c0c-8ebe-12d54ed80f36">
+                    <propertyInstance
+                      Id="0fbc9700-3787-47e6-8f1c-17a950f29d19"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c25587fe-a294-46bb-9861-62c82234d347">
+                    <propertyInstance
+                      Id="9071ec6e-8e40-4048-a650-2c17bf6d93e7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ffd6ec42-5438-458c-a21a-221e71764dac">
+                    <propertyInstance
+                      Id="53d203af-0900-4728-8105-f5bd31132faa"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="822bcec7-62ef-4c4a-9176-e4aa79707ac5"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="RMSModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f45bd870-13db-4da2-899a-b07928a95b3d"
+                  name="id"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a34d3528-3604-4665-ba76-7baf587d719e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Repository Type%3DUserInfoRepository Member%3D(Name%3DLogin OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Did"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="RMSModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ae71d36a-3d48-4cfc-b7bb-396b91c9ac60"
+                  name="password"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1100f269-a129-4491-a5b9-4280aeaeaf83"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Repository Type%3DUserInfoRepository Member%3D(Name%3DLogin OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dpassword"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="RMSModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f2e5799e-889a-4d8e-8350-4bd1ac966758"
+            name="Update"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8456af79-9f85-40d3-ba3c-6b048da3dc8c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Repository Type%3DUserInfoRepository Member%3D(Name%3DUpdate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Models Type%3DUserInfoModel)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ce4cec12-7de4-4d71-8e54-effb8d928d0e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c79c8ea0-b871-4228-aa96-bb8caef32ae4">
+                    <propertyInstance
+                      Id="de659119-5e76-4522-bffe-8aefa6c100c5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b4949e8-b660-4db9-b302-2355d1e0bbaf">
+                    <propertyInstance
+                      Id="bf500efb-8d18-4ac1-bc4f-7cb1b1477e1f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6a493eb0-85e4-4a48-a092-6951446b826d">
+                    <propertyInstance
+                      Id="b53f9d5a-d116-4b86-b115-5ae941025ace"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a5e9b0c2-b568-48c1-be41-4caed91f1a48">
+                    <propertyInstance
+                      Id="6b33d343-1be1-40a6-9ac8-268db9d1ebdb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6f8964bc-558f-4c02-b31e-51972f506ddf">
+                    <propertyInstance
+                      Id="81a997c7-e90f-40cd-9611-87966e05ec96"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a2d1892-b253-4aaa-8a7d-814df8f77c29">
+                    <propertyInstance
+                      Id="6124d11a-fac8-453e-aefb-5a366bca7ad3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="08c1cebd-1e5a-4662-a75d-5fa16f8b0a2d"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="RMSModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7b91428d-397c-4410-9356-4b82745bd0a0"
+                  name="model"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="142d1247-f11f-4d37-b130-e519faca0619"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Repository Type%3DUserInfoRepository Member%3D(Name%3DUpdate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Models Type%3DUserInfoModel)]) ParameterIdentifier%3Dmodel"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="14ba98c4-8f6a-45d2-8062-063baf4deea0"
+                      LastKnownName="UserInfoModel"
+                      LastKnownLocation="Package1_1845.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8dccc61f-bf9d-47a2-b9e7-0934ffc318ab"
+            name="GetAll"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8f0a39eb-61c0-4559-91b1-37a3b185a6ef"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Repository Type%3DUserInfoRepository Member%3DGetAll"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0bed4066-4613-4f71-b64b-7e524db60584"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fde2ba0e-7342-46f8-9a46-56d8456e927a">
+                    <propertyInstance
+                      Id="a693d628-d559-45f7-99a9-af24fd22b00e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cee5b53d-756c-4b10-9a70-8a499262611a">
+                    <propertyInstance
+                      Id="527b5e3d-5c54-4fb5-a7ef-662ffd93e2ae"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a6d079a7-81c8-47f3-b5da-0d6f2e66d793">
+                    <propertyInstance
+                      Id="21cec35c-67f8-4197-8b5f-470f9129aa11"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b1802537-10cf-47ec-bfe1-540f3c7ee9eb">
+                    <propertyInstance
+                      Id="5658f0e4-4c68-4096-b2cf-ebc1c5d755f9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a48c54c-0473-49c7-a863-00017aa35fb8">
+                    <propertyInstance
+                      Id="ff0211b6-1bd0-4fdf-8aea-edc660a3f413"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5de5441f-97df-414e-b501-3db382c443ea">
+                    <propertyInstance
+                      Id="50950e0e-443c-419f-9424-c3ebcfc1bf1b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d61363c1-15d4-4190-830e-563fbf6ff707"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="ae43f6ec-3255-428e-99b9-e3d079654dc6"
+                      LastKnownName="IEnumerable&lt;UserInfoModel‎&gt;"
+                      LastKnownLocation="Package3_1846.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="75b10d36-24a3-432b-a7e5-91317e31d710"
+        name="Repository&lt;UserInfoModel‎&gt;"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="e734c3c4-9cc1-431d-8445-5d9714997341"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c9f67247-61ec-4b95-8319-42d1ce90e0fd">
+                <propertyInstance
+                  Id="5b229ba2-475e-4fe3-a8c3-11f0f08d10b8"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0e7e8579-9ca9-43cd-8be3-60e018db106a">
+                <propertyInstance
+                  Id="ca64b290-7924-4690-9d8f-15be8ce79765"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5f3c4715-bde9-4a38-be17-a234eb6acc93">
+                <propertyInstance
+                  Id="5983b8a9-c689-49cd-b36c-ec8087193b40"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c304b554-a796-4b1e-a61e-61c2a8ffd423">
+                <propertyInstance
+                  Id="a0525cf1-28ca-4bc4-bdd1-7e97799801bb"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1dc288e2-7533-45d1-a0a3-22613a06e0a2">
+                <propertyInstance
+                  Id="ea4de48e-8edd-46be-8a1f-8282717700ca"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <signatures>
+          <templateBinding
+            Id="df5cb176-0dab-4680-ae5e-8e3c4abd5d39">
+            <redefinableTemplateSignatureMoniker
+              Id="44cfaff4-f00d-4b73-aabf-c3f955bb8dc7"
+              LastKnownLocation="Package_1846.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="bb14180d-55ce-429e-aa6d-bab43cb3dfc5">
+                  <actuals>
+                    <classMoniker
+                      Id="14ba98c4-8f6a-45d2-8062-063baf4deea0"
+                      LastKnownName="UserInfoModel"
+                      LastKnownLocation="Package1_1845.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="ae43783b-ed30-4cf8-ac6d-c466a499784c"
+                      LastKnownLocation="Package_1846.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ba62cdef-2eb1-475e-bf8f-aaf001a94444"
+        name="Repository"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="6a6b7d43-33d6-4881-80b4-573c1ac3cc7b"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Repository Type%3D(Name%3DRepository GenericParameterCount%3D1)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="29f4d958-9f06-4841-9669-ffb045ff2223"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="356f67e7-8de4-43cd-9845-42279926d320">
+                <propertyInstance
+                  Id="f55ce045-e1da-4a95-9500-aaee8596195d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9497dbe8-64c3-474d-a222-67ad6078448a">
+                <propertyInstance
+                  Id="e0921b08-0097-4490-a91a-244eed4facac"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="abea9f48-cdd3-46fa-891c-07571cd2d90a">
+                <propertyInstance
+                  Id="f76cd621-a6cb-4c50-ae04-af38f8abf58d"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7b13590c-32e1-4e40-ac64-2a1cfcfef181">
+                <propertyInstance
+                  Id="c907938e-64a3-44c1-9f33-ac345ad595f2"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1b107a4a-4f5f-4ff2-9b49-aa88b16658ab">
+                <propertyInstance
+                  Id="2ba4015a-d71e-4f19-a235-338f72a9eaf8"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="44cfaff4-f00d-4b73-aabf-c3f955bb8dc7"
+            parameters=""
+            name="RedefinableTemplateSignature1"
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="ae43783b-ed30-4cf8-ac6d-c466a499784c">
+                <referencesInternal>
+                  <reference
+                    Id="08b5ba3f-1e8f-43e1-9324-2a63a3ade337"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS%2Fbin%2FRealRMS.dll&quot; Namespace%3DRealRMS.Repository Type%3D(Name%3DRepository GenericParameterCount%3D1) ParameterIdentifier%3D0"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="5f5638c1-92bf-43ca-b437-1433f6c0d008"
+                    name="T"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,86 @@
+﻿table {
+    border: solid 1px;
+    border-radius:5px;
+    font-size: 20px;
+}
+table p {
+    font-size: 12px;
+}
+
+table tr td div.smallGridFont {
+    font-size:12px;
+    font-weight:bold;
+}
+
+table tr td div.row {
+    padding-top: 2px;
+    padding-bottom: 3px;
+}
+
+table tr td div.row [class*="col-"] {
+    padding-top: 4px;
+    padding-bottom: 3px;
+}
+tr.row {
+    background-color: lightgray;
+}
+tr.alternatingrow {
+    background-color: #00ffff;
+}
+
+
+.fivePercent {
+    width:5%;
+}
+
+.tenPercent {
+    width:10%;
+}
+
+.fifteenPercent {
+    width:15%;
+}
+
+.twentyPercent {
+    width:20%;
+}
+
+.twentyFivePercent {
+    width:25%;
+}
+
+.thirtyPercent {
+    width:30%;
+}
+
+.thirtyFivePercent {
+    width:35%;
+}
+
+.fourtyPercent {
+    width:40%;
+}
+
+.fourtyFivePercent {
+    width:45%;
+}
+
+.fiftyPercent {
+    width:50%;
+}
+
+.sixtyPercent {
+    width:69%;
+}
+
+td span.loadingMessage {
+    color: red; display: none; font-size:12px;
+}
+
+td span.loadedMessage {
+    color: green; display: none; font-size:12px;
+}
+
+table a.goToItem {
+    text-decoration:none;
+}

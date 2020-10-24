@@ -1,0 +1,168 @@
+﻿@model RealRMS.Models.ViewModel.OrderViewModel
+@{
+    ViewBag.Title = "Order";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section stylesheets{
+    <link rel="stylesheet" href="~/Content/modal.css"/>
+    <link rel="stylesheet" href="~/Content/order.css"/>
+}
+
+@section scripts{
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script type="text/javascript" language="javascript" src="~/Scripts/order.js"></script>
+}
+
+
+<div data-ng-app="orderApp" data-ng-controller="OrderController" data-ng-init="init(@Newtonsoft.Json.JsonConvert.SerializeObject(Model))">
+    <div class="row alignCenter">
+        <h1>
+            Order # {{ orderNumber }}
+        </h1>
+    </div>
+    <input type="hidden" id="splitChecks"/>
+    <div id="orderModal" class="modal" data-ng-if="order.Id == 0">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onClick="window.location.href = '/Order/Index';">x</span>
+            <div clas="row">
+                <span class="flankLeft">
+                    Table Number:
+                </span>
+                <span class="flankRight">
+                    <input id="tableNum" name="tableNum" type="number" data-ng-model="order.TableId" />
+                </span>
+            </div>
+            <div clas="row">
+                <span class="flankLeft">
+                    Number of Seats:
+                </span>
+                <span class="flankRight">
+                    <input id="numSeats" name="numSeats" type="number" data-ng-model="order.NumberOfSeats" />
+                </span>
+            </div>
+            <div class="row">
+                <input type="button" value="Take Order" data-ng-click="createOrder();"/>
+            </div>
+        </div>
+    </div>
+    <div id="commentModal" class="modal" data-ng-if="annotating == true">
+        <div class="modal-content">
+            <span class="close" data-ng-click="cancelComment()">x</span>
+            <div class="row">
+                <span class="flankLeft">
+                    Comments:
+                </span>
+                <span class="flankRight">
+                    <textarea id="comment" name="comment" data-ng-model="currentOrderItem.comment"> </textarea>
+                </span>
+            </div>
+            <div class="row">
+                <input type="button" value="Submit" data-ng-click="addComment()"/>
+            </div>
+        </div>
+    </div>
+    <div id="checkoutModal" class="modal" data-ng-if="splittingChecks == true">
+        <div class="modal-content">
+            <span class="close" data-ng-click="cancelCheckout()">x</span>
+            <p>Drag the tables you wish to seperate into the boxes below.</p>
+            <div class="row">
+                <ul class="draggableList">
+                    <li data-ng-repeat="n in seats">
+                        <input type="button" class="draggableSeatNumber" value="{{n}}" id="{{n}}" draggable="true" ondragstart="order.drag(event)"/>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="droppableSection" id="check{{n}}" data-ng-repeat="n in seats" ondrop="order.drop(event)" ondragover="order.allowDrop(event)">
+                    
+                </div>
+            </div>
+            <div class="row">
+                <input type="button" value="Submit" onclick="order.prepareMultipleOrder(document.getElementById('hiddenOrderId').value);" />
+            </div>
+        </div>
+    </div>
+    <div clas="row">
+        <div class="col-12">
+            <span class="errorText">
+            </span>
+            <span class="informationalText">
+            </span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-7 orderPane">
+            <div data-ng-repeat="(category, items) in menu">
+                <h1>
+                    {{ category }}
+                </h1>
+                <ul class="menuList">
+                    <li data-ng-repeat="item in items">
+                        <a class="orderLink" href="javascript:void(0);" data-ng-click="addItemToOrder(item);">
+                            <span class="flankLeft">
+                                <strong class="itemName">
+                                    {{ item.name }}
+                                </strong>
+                                <p class="itemDescription">
+                                    {{ item.description }}
+                                </p>
+                            </span>
+                            <span class="flankRight">
+                                {{ item.price }}
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-4 orderedPane">
+            <table class="orderedList" ng-if="orderedItems.length > 0">
+                <tr>
+                    <th>
+                    </th>
+                    <th class="seatColumn">
+                        Seat#
+                    </th>
+                    <th class="deleteColumn">
+                        Remove
+                    </th>
+
+                </tr>
+                <tr data-ng-repeat="item in orderedItems track by $index">
+                    <td class="itemName">
+                        <a class="orderedItem" href="javascript:void(0);" data-ng-click="initializeComment($index, item);" title="Click to add a note.">
+                            {{ item.name }}
+                        </a> <br/>
+                        <span class="orderComment">
+                            {{ item.comment == undefined || item.comment == null ? "" : item.comment }}
+                        </span>
+                    </td>
+                    <td class="alignCenter">
+                        <!--<select ng-model="item.seatNumber" ng-options="n as n for n in seats"></select>-->
+
+                        <select data-ng-options="n as n for n in seats" data-ng-model="item.seatNumber">
+
+                        </select>
+                    </td>
+                    <td class="alignCenter">
+                        <a class="removeIcon" href="javascript:void(0);" data-ng-click="removeItemFromOrder($index);" title="Click to remove from order.">
+                            x
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <div class="row" data-ng-if="orderedItems.length > 0">
+                <div class="col-6">
+                    <input type="hidden" id="hiddenSeats" value="{{seats}}"/>
+                    <input type="hidden" id="hiddenOrderId" value="{{order.Id}}"/>
+                    <input type="button" data-ng-click="sendOrder()" value="Send"/>
+                    <input type="button" data-ng-if="isAdmin" data-ng-click="voidOrder()" value="Void"/>
+                    <input type="button" data-ng-if="order.OrderItems.length > 0" onclick="order.prepareSingleOrder(document.getElementById('hiddenSeats').value, document.getElementById('hiddenOrderId').value)" value="Checkout"/>
+                    <input type="button" data-ng-if="order.OrderItems.length > 0" data-ng-click="splitChecks();" value="Split Checks"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

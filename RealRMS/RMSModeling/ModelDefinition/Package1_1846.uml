@@ -1,0 +1,962 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="360c2104-98ac-4d08-b70a-f889d3433065"
+  name="Utility"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="c24bdd9b-4b15-4ddf-a22e-24907fe917b4"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DRealRMS.Utility"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="bd27299f-d4eb-41d8-93f4-931da6609e4a"
+        name="IConnectionFactory"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="664b0c25-2fc6-40eb-adb4-e5e035bdedf0"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS.Utility%2Fbin%2FDebug%2FRealRMS.Utility.dll&quot; Namespace%3DRealRMS.Utility Type%3DIConnectionFactory"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="94a58b0b-f438-41f0-b53d-c5224e68c90e"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a532a39b-a126-4ed6-8fcf-1e078bb4a1e8">
+                <propertyInstance
+                  Id="45ca28f2-6127-4fd6-a243-ae3fceed1afb"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="77aa1216-f467-4640-ace8-f6a6cebe2a91">
+                <propertyInstance
+                  Id="f48f4fc2-42f6-45f2-be59-90005d9b6c06"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8e24dbd7-069e-4b38-a31b-87bcf80803ce">
+                <propertyInstance
+                  Id="f7072347-5b15-4599-8aae-917fa29189f1"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cf5e226a-b6e1-4bee-ae20-ace890b6e0d7">
+                <propertyInstance
+                  Id="33867ab3-0b7e-46bc-ab1a-83e68442eaf8"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="6f92a2a9-af41-4ea7-b7ad-0f3f5944b431"
+        name="ISqlWorker"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="cf76f466-414c-45a5-bff2-195dcfa31f4d"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS.Utility%2Fbin%2FDebug%2FRealRMS.Utility.dll&quot; Namespace%3DRealRMS.Utility Type%3DISqlWorker"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="0820548c-e0b6-4826-916f-34d182d872f7"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2a506817-5a6d-4355-8450-392b6c83c6e6">
+                <propertyInstance
+                  Id="891cf210-110b-4ef1-86c5-a897f2d9a5fd"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5dcfd577-1d6c-4947-94ce-9f6cae55509a">
+                <propertyInstance
+                  Id="826081eb-8fbf-4d23-9483-524784b594c6"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="845cd836-c612-421d-bd62-ddf6e0636730">
+                <propertyInstance
+                  Id="fbef862b-7fb8-49f1-8735-0a9bd795ebbc"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c9680538-c9c4-4eb3-ae3c-9d7187ce0e86">
+                <propertyInstance
+                  Id="2ca50554-9cbf-44c4-a386-feb085f78bff"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f033e921-9f3e-4a1d-b20b-d029cbe0bb44"
+        name="SqlWorker"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="68f8827e-9062-4ed8-89b6-52958d19779d"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS.Utility%2Fbin%2FDebug%2FRealRMS.Utility.dll&quot; Namespace%3DRealRMS.Utility Type%3DSqlWorker"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="17c1e596-db99-4603-92b4-c4fbb34e6c81"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eef9c199-d736-47f6-b35c-708769754163">
+                <propertyInstance
+                  Id="7b511643-264a-43d7-870b-beb1c2e44c2d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="08302f6a-41f9-495d-a844-1c17d8264030">
+                <propertyInstance
+                  Id="03768b07-1070-4c19-8d73-c7f067ed6131"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="606402b5-c5c3-4419-8163-07dd4345e487">
+                <propertyInstance
+                  Id="a493d722-c3e6-48b9-8003-d0d5768c5297"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9d9ee371-e596-47b2-aefa-ff31af228d87">
+                <propertyInstance
+                  Id="97b19865-14f8-4496-a4c3-bd78135dc48a"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="138a48ee-8999-4a1a-9797-c6ced0cb5705">
+                <propertyInstance
+                  Id="ecf01fbc-980f-4752-9d3a-a6b779f0a0d9"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="8ef988d3-a04f-4515-994a-18b83efbe19a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b97f3942-46ba-4f71-85e1-0df6baf220fa"
+              LastKnownName="BaseSqlWorker"
+              LastKnownLocation="Package1_1846.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="db1bb82b-afe6-4df5-94e2-1db0a4398c05"
+            name="SqlWorker"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e0d1da96-6fd4-4787-ae34-656f922a4b9a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS.Utility%2Fbin%2FDebug%2FRealRMS.Utility.dll&quot; Namespace%3DRealRMS.Utility Type%3DSqlWorker Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Data.dll&quot; Namespace%3DSystem.Data Type%3DIDbConnection)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f6cd78f5-f402-425e-99e8-522206f1d963"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fbf8d8a4-7fc8-40ef-b72d-52447c07a6a3">
+                    <propertyInstance
+                      Id="2391435f-6f37-437c-af27-ff9f360e7a18"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5cff93fb-9ede-4f5b-9703-ac626120adbe">
+                    <propertyInstance
+                      Id="3ff67d8e-0ec9-48dd-8dba-35c1dd788aca"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe39ea4c-0eb8-487a-bf28-6e559dc450dd">
+                    <propertyInstance
+                      Id="cd478333-35dc-43b0-be81-3c157e293a64"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4aecca33-147f-4f11-a807-ff8136116e53">
+                    <propertyInstance
+                      Id="978f6e15-0ed0-427f-9825-2eb5f19619ec"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="071dd690-c6d4-45b4-b694-e2324a5afff9">
+                    <propertyInstance
+                      Id="13751f04-c23b-4276-8ede-53662d73ade2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="031423b0-fb66-4498-858d-de858389f333">
+                    <propertyInstance
+                      Id="97ad96ad-c777-4e51-9c4a-905d5790ea1c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="881da345-718f-45e9-b758-9f6796ff90dd"
+                  name="connection"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4edf2461-cdba-4161-97d5-b7acce9e8ec5"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS.Utility%2Fbin%2FDebug%2FRealRMS.Utility.dll&quot; Namespace%3DRealRMS.Utility Type%3DSqlWorker Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Data.dll&quot; Namespace%3DSystem.Data Type%3DIDbConnection)]) ParameterIdentifier%3Dconnection"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="a52bedbf-19f7-4f42-a4a4-91834764da2d"
+                      LastKnownName="IDbConnection"
+                      LastKnownLocation="Package_1859.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="53c54a59-5276-4146-95ad-1c99c8a78697"
+            name="AddInputParameter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9b5a4651-d063-48ac-89f6-5c198e2e795c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS.Utility%2Fbin%2FDebug%2FRealRMS.Utility.dll&quot; Namespace%3DRealRMS.Utility Type%3DSqlWorker Member%3D(Name%3DAddInputParameter OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0e8582e0-b283-430c-a524-6c6b20346850"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1e8d736e-378e-4f9d-94a4-d4a5d5e894b9">
+                    <propertyInstance
+                      Id="0d0df3dc-8973-486f-9c47-bbf46ff949bf"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a0149927-e507-4291-9501-b4f67542941e">
+                    <propertyInstance
+                      Id="311a2c5e-9884-4ea3-bcbf-7e5cff01ca49"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="80c54db1-1cb0-40f8-ace8-01385c9ed142">
+                    <propertyInstance
+                      Id="f594deba-6b7c-4e2e-9fab-985576f55e55"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e1e641f3-7672-43f3-8b6f-208a41d7c2e4">
+                    <propertyInstance
+                      Id="2b077484-ef0c-416c-b331-b2c975a1df49"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="22f91351-a2a9-4eaf-a868-9fc0521ec604">
+                    <propertyInstance
+                      Id="0dc38b03-c9d7-4d2c-827b-d5e5bb5d825a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2095c033-7260-4435-83f0-d177189cc1c2">
+                    <propertyInstance
+                      Id="ac32f0e1-6359-439c-b4b5-21e0e0eee24d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b8c13b1e-ba3b-45bb-b006-b76ab0f8267f"
+                  name="parameterName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="71616662-03dc-40c1-bed9-e1d8080b419a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS.Utility%2Fbin%2FDebug%2FRealRMS.Utility.dll&quot; Namespace%3DRealRMS.Utility Type%3DSqlWorker Member%3D(Name%3DAddInputParameter OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3DparameterName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="RMSModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a9579065-59b5-4173-95c1-32e409a5b704"
+                  name="parameterValue"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6ae125b0-d8ed-4b25-97f6-126d9bdf1b6c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS.Utility%2Fbin%2FDebug%2FRealRMS.Utility.dll&quot; Namespace%3DRealRMS.Utility Type%3DSqlWorker Member%3D(Name%3DAddInputParameter OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3DparameterValue"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="39642157-d8a5-468e-bb29-311419ff2367"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package2_1845.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7a1af353-9255-489e-83a3-5682c0c6c986"
+            name="AddOutputParameter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ca49b960-2d0c-446a-aa6d-293fd0ebe4ff"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS.Utility%2Fbin%2FDebug%2FRealRMS.Utility.dll&quot; Namespace%3DRealRMS.Utility Type%3DSqlWorker Member%3D(Name%3DAddOutputParameter OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ea4faeaf-f120-4593-be89-b8cea389bfae"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eca4a1d9-26f0-4d98-a66f-e8b897f2705e">
+                    <propertyInstance
+                      Id="76fc613f-17f6-47df-b420-d776aa87e9f4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="49bf9315-a6c2-4566-840b-b3d18ba67875">
+                    <propertyInstance
+                      Id="f91b1f90-f0e0-4373-b9bc-0bb11e14ca75"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a238bb64-17ac-4cd1-a9a3-3193f769057f">
+                    <propertyInstance
+                      Id="3b5d9b51-91bb-4539-a99f-7b14ccd272ce"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d2fee909-3006-42fb-85ec-ae9a33498655">
+                    <propertyInstance
+                      Id="890cec45-b46a-4b94-b894-7d3754a66406"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c15dca6-9d58-4a25-a97c-863f0cd0f71f">
+                    <propertyInstance
+                      Id="7ecb9422-dd02-4111-af51-e164ac8c4d30"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="86e0fbe0-2903-44e3-9f2d-d54f760399bc">
+                    <propertyInstance
+                      Id="7519a2e9-76cf-47a6-83a2-4d8db5a07cb9"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="02eabff8-4258-4395-8368-29e94f240f57"
+                  name="parameterName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="92b2d5eb-7dd9-4070-9b80-c188cbc59142"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS.Utility%2Fbin%2FDebug%2FRealRMS.Utility.dll&quot; Namespace%3DRealRMS.Utility Type%3DSqlWorker Member%3D(Name%3DAddOutputParameter OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DparameterName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="RMSModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="69390eab-9d64-4abb-b8d5-4637007f5939"
+            name="ReturnOutputParameter‎&lt;T‎&gt;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6474f2e8-fac5-4d71-a9fb-d4ba292655ba"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS.Utility%2Fbin%2FDebug%2FRealRMS.Utility.dll&quot; Namespace%3DRealRMS.Utility Type%3DSqlWorker Member%3D(Name%3DReturnOutputParameter GenericParameterCount%3D1)"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d5bf7f66-4643-4f0f-afb1-9759e8838a0f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f7bcae6-6df8-4118-8e9c-f1786349202e">
+                    <propertyInstance
+                      Id="f0c81b27-ef40-4dd7-839b-e52baa1ad1c9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="816e0cc3-e3d2-4919-bd73-800c0988c51e">
+                    <propertyInstance
+                      Id="27e3a4fe-f00a-41bd-b64f-55e6b139393c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2938ad9f-b081-46e9-b722-f02f435855d8">
+                    <propertyInstance
+                      Id="62e65df7-7add-485d-bbb1-a9955e7bb3f5"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="150aff98-e35f-4f17-bd0b-d05a5b7afc14">
+                    <propertyInstance
+                      Id="0ece6a98-d97b-48a1-a361-7e74ed152e0c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5fc9ceaa-b261-42e3-a2c2-2e7359f7f676">
+                    <propertyInstance
+                      Id="8b38c48a-5697-459d-8426-ff1bd46496cf"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b83e85fc-5ae6-4890-906c-c0da08aa465c">
+                    <propertyInstance
+                      Id="64e56102-b025-4dec-b901-ff4993afaeda"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a2e4b720-6ecf-42c6-bcec-331992d30e5a"
+                  direction="Return">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="40beee92-7ff6-44ca-bbca-0feb00085cce"
+                      LastKnownName="T"
+                      LastKnownLocation="Package1_1846.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="68ae3896-3061-4000-bdf4-cfc49107d09b"
+            name="SetupCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="78afc32a-66a0-4e4d-91f6-024cb2748503"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS.Utility%2Fbin%2FDebug%2FRealRMS.Utility.dll&quot; Namespace%3DRealRMS.Utility Type%3DSqlWorker Member%3D(Name%3DSetupCommand OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Data.dll&quot; Namespace%3DSystem.Data Type%3DCommandType)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="54416d1c-c84f-452e-bec0-b134e68805e8"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="99dc9598-732d-4aaa-b353-a85a3b43cd22">
+                    <propertyInstance
+                      Id="983ae1ac-3cff-4f4f-9e36-b49759bb3028"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4847434-3006-4bd9-a0ad-2e456601dbae">
+                    <propertyInstance
+                      Id="e7a6eb7c-a14c-4a3f-b54f-1fa5d4ab5f37"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="797e89c3-bb8d-4052-b1af-b08a1aceff27">
+                    <propertyInstance
+                      Id="8c7dae78-dca5-451e-a687-7e5216f78bc7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a3a739e-102e-407a-8fc6-a01b8663b3a8">
+                    <propertyInstance
+                      Id="84519ffd-f293-48cf-b006-2dbb14bcfdda"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="31128813-262c-4824-97cb-f09f3d786eb0">
+                    <propertyInstance
+                      Id="6d51988e-19b0-4c17-85ec-7d6ea765fda8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a9b1500-a4c0-4dc3-bfca-66460d5a65ff">
+                    <propertyInstance
+                      Id="9999242d-0c14-48e9-969c-b8e08d667176"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d66b2d0a-2f5b-4835-a2c7-3c87d2726368"
+                  name="query"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="35a379e2-6282-4657-aff6-68c41fb028fc"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS.Utility%2Fbin%2FDebug%2FRealRMS.Utility.dll&quot; Namespace%3DRealRMS.Utility Type%3DSqlWorker Member%3D(Name%3DSetupCommand OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Data.dll&quot; Namespace%3DSystem.Data Type%3DCommandType)]) ParameterIdentifier%3Dquery"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="RMSModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7aa9efd1-2015-40c3-9431-7f5bf8a63754"
+                  name="commandType"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7294a0a6-ba34-4831-8fed-c31580ddfcbb"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS.Utility%2Fbin%2FDebug%2FRealRMS.Utility.dll&quot; Namespace%3DRealRMS.Utility Type%3DSqlWorker Member%3D(Name%3DSetupCommand OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Data.dll&quot; Namespace%3DSystem.Data Type%3DCommandType)]) ParameterIdentifier%3DcommandType"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="04d72ba9-34dc-4b08-b57d-e3cc215d726a"
+                      LastKnownName="CommandType"
+                      LastKnownLocation="Package_1859.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a7b11bca-235a-4476-8b8c-2e74806c46f9"
+            name="ExecuteNonQuery"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="99deee91-47ca-4004-9710-0b2aec0c2db3"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS.Utility%2Fbin%2FDebug%2FRealRMS.Utility.dll&quot; Namespace%3DRealRMS.Utility Type%3DSqlWorker Member%3DExecuteNonQuery"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ad62f075-871e-4268-9430-21dee086938d"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="22407273-fe3d-4e20-8dee-be1751eee76c">
+                    <propertyInstance
+                      Id="44d611b3-dd50-4672-ab36-fe5f312ab0ef"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d61a38b-f1db-44b9-8ec2-d880307d1ec5">
+                    <propertyInstance
+                      Id="771e0315-59da-4378-9bb0-b40981ad49a3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eb916c5a-5bc7-434d-9b5a-e28c643ae4a2">
+                    <propertyInstance
+                      Id="05eb9589-c305-47b8-b192-46500f9ddc38"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2399a0b1-2e42-424b-a6da-c18df617ce40">
+                    <propertyInstance
+                      Id="6e49b57b-48b8-4344-b5b0-c1b6d0b79621"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2f9291ea-1505-42b3-b671-12be89347eb8">
+                    <propertyInstance
+                      Id="329caf7a-ce3d-41cf-b5b0-5af5dcea5034"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="610b541f-9be8-4808-90a9-1506b97ee67a">
+                    <propertyInstance
+                      Id="23db8df8-cda9-4962-96cd-36b11909dcf5"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5b5e4832-923e-46f1-8d23-c7cfe8ddb67e"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="RMSModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ad0b14fe-3654-4070-98dd-16b8cf5c0dde"
+            name="ExecuteScalar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="565a4ab4-c4a1-4e99-8ca6-f77d159f2a07"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS.Utility%2Fbin%2FDebug%2FRealRMS.Utility.dll&quot; Namespace%3DRealRMS.Utility Type%3DSqlWorker Member%3DExecuteScalar"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cb8dc875-7b58-48d4-bc70-8144aa914a90"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c66b0a79-e684-4a21-b09a-268565c50e2a">
+                    <propertyInstance
+                      Id="761a2dfa-905c-4331-aac2-a02063fc9585"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e6ccf587-4cb5-4f0a-b0f0-2047821f978f">
+                    <propertyInstance
+                      Id="8a2fb6fc-0e57-4770-831b-0effd703ab50"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="27443a75-6d2d-4955-a0d6-687fb0f9d527">
+                    <propertyInstance
+                      Id="4f2ea250-3875-4d65-b090-6d088f680bc0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf75fbec-3b13-443b-850b-96c57539a89a">
+                    <propertyInstance
+                      Id="2819ef74-f69b-49a7-97ce-9aa6f849a9cb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="543d6c20-7deb-4fd4-b69d-070dbae1a207">
+                    <propertyInstance
+                      Id="88fbadde-6c42-4bf1-8a5f-9bd8572cd120"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="63014f09-12dc-4542-be33-1362d2c11875">
+                    <propertyInstance
+                      Id="ccd452ad-3067-4035-ac21-dbde299501cc"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="13b754b4-8b27-4eab-911a-146e5bc53b22"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="39642157-d8a5-468e-bb29-311419ff2367"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package2_1845.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4a897ea0-5250-4c80-bf7e-9ee9a4485110"
+            name="GetDataReader"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="fb9bcd55-7fcb-4f06-8ee3-e9870cb1be9c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS.Utility%2Fbin%2FDebug%2FRealRMS.Utility.dll&quot; Namespace%3DRealRMS.Utility Type%3DSqlWorker Member%3DGetDataReader"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8754a6dd-5fc2-4cd9-a400-0e5a51d8f254"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e03913d8-90d4-4daf-abae-c66472a51964">
+                    <propertyInstance
+                      Id="1658364d-4fdb-44d8-9bdc-1ceea5e7e106"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8a3bf2d-d346-49c2-b394-83a97a20cfd6">
+                    <propertyInstance
+                      Id="ad183205-ac19-41bb-9976-4fd9a0ec320a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6969e7b1-20c8-4956-8612-e39488df3020">
+                    <propertyInstance
+                      Id="55783d50-a661-49fa-b238-ef19f4918620"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="98f67486-1203-4318-ad77-285d90612ab7">
+                    <propertyInstance
+                      Id="aac9d9d3-f026-4fdd-a454-05d89ca6b941"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ac1f524-075e-4e68-8f54-a0cab2c17cad">
+                    <propertyInstance
+                      Id="0a9b9ee7-d131-45d0-a7f6-45e555801a62"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10fca039-f800-469f-93ef-e5d5d0c2f75d">
+                    <propertyInstance
+                      Id="b84745ec-e5bc-4aa8-9b04-4088d095728b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d9614c12-d2ed-460a-883f-b7b234e881b4"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="92053120-fe6c-47d3-b00b-36812005e98e"
+                      LastKnownName="IDataReader"
+                      LastKnownLocation="Package_1859.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="40beee92-7ff6-44ca-bbca-0feb00085cce"
+        name="T">
+        <referencesInternal>
+          <reference
+            Id="536a318f-9064-4f20-a43f-45e2982140d7"
+            handle="viewcode://./CodeSchema_GenericParameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS.Utility%2Fbin%2FDebug%2FRealRMS.Utility.dll&quot; Namespace%3DRealRMS.Utility Type%3DSqlWorker Member%3D(Name%3DReturnOutputParameter GenericParameterCount%3D1) ParameterIdentifier%3D0"
+            tag="ViewCode" />
+        </referencesInternal>
+      </undefinedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b97f3942-46ba-4f71-85e1-0df6baf220fa"
+        name="BaseSqlWorker"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="2ba42020-84bd-45b0-800e-1189a4e12af8"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdwitherspoon%2FDocuments%2FVisual Studio 2013%2FProjects%2FRealRMS%2FRealRMS.Utility%2Fbin%2FDebug%2FRealRMS.Utility.dll&quot; Namespace%3DRealRMS.Utility Type%3DBaseSqlWorker"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="9d8c3455-f704-4712-9e68-3e744559a322"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5299cb03-7da7-473a-8a80-fbfaeac6d18b">
+                <propertyInstance
+                  Id="ca6021c7-7b3d-48cb-857d-aa576c703ae5"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5f295736-06d5-49b6-b749-811cddf64d48">
+                <propertyInstance
+                  Id="c1652be5-053e-4133-9467-9390bb68ae3a"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f2178f12-cdad-4e46-add4-f4d90ca1b14f">
+                <propertyInstance
+                  Id="00e732d2-277d-45e9-9aa3-f07cf1038c88"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9e60a580-1df2-4f36-a059-bb79885ab922">
+                <propertyInstance
+                  Id="d3a998c5-76a1-46b8-ae61-d9173804ae56"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bca9400f-feeb-40e1-bb9e-7c7ff049565e">
+                <propertyInstance
+                  Id="80ebca60-ea5d-47c9-bea3-7cfc5e149d3f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="2f9b718c-5651-472b-ad12-95b8589f7f88">
+            <interfaceMoniker
+              Id="6f92a2a9-af41-4ea7-b7ad-0f3f5944b431"
+              LastKnownName="ISqlWorker"
+              LastKnownLocation="Package1_1846.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

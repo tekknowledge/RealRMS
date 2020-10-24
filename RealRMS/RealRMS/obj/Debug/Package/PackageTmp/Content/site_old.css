@@ -1,0 +1,66 @@
+﻿/***********
+ * General *
+ ***********/
+div.align-right {
+    text-align:right;
+}
+
+/***************
+ * Layout Grid *
+ ***************/
+.row {
+    width: 100%;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    padding: 8px;
+}
+
+/* The Standard on This is 12 Columns - If I should run into major problems - we should adjust the scheme back to 12 */
+.col-1 {
+    width: 10%;
+}
+.col-2 {
+    width: 20%;
+}
+.col-3 {
+    width: 30%;
+}
+.col-4 {
+    width: 40%;
+}
+.col-5 {
+    width: 50%;
+}
+.col-6 {
+    width: 60%;
+}
+.col-7 {
+    width: 70%;
+}
+.col-8 {
+    width: 80%;
+}
+.col-9 {
+    width: 90%;
+}
+.col-10 {
+    width: 100%;
+}
+
+.headingColumn {
+    text-align:right;
+}
+/*******************
+ * END Layout Grid *
+ *******************/

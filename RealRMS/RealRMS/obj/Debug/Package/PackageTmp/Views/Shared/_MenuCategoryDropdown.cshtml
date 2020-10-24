@@ -1,0 +1,9 @@
+﻿@model IEnumerable<RealRMS.Models.MenuCategoryModel>
+
+<select id="category" onchange="menuList.filter(this)">
+    <option>--Any--</option>
+    @foreach (var category in Model)
+            {
+        <option value="@category.Id">@category.Name</option>
+    }
+</select>

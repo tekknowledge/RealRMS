@@ -1,0 +1,104 @@
+﻿@model RealRMS.Models.ViewModel.MenuListViewModel
+
+@{
+    ViewBag.Title = "View Menu Items";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int i = 0;
+}
+@section stylesheets{
+    <link rel="stylesheet" href="~/Content/datagrid.css" />
+}
+
+@section scripts{
+    <script type="text/javascript" language="javascript" src="~/Scripts/MenuList.js"></script>
+}
+
+<div class="row alignCenter">
+    <h1>
+        @ViewBag.Title
+    </h1>
+</div>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+        <span class="errorText">
+
+        </span>
+        <span class="informationalText">
+
+        </span>
+    </div>
+    <div class="col-2"></div>
+</div>
+<div class="row">
+    <div class="col-2">
+    </div>
+    <div class="col-3">
+        Select a category:
+    </div>
+    <div class="col-7 alignLeft">
+        @Html.Partial("_MenuCategoryDropdown", Model.MenuCategories)
+    </div>
+</div>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+        @if (Model.MenuItems.Any()) {
+            <table id="grid">
+                <tr class="row">
+                    <th>
+                        Id
+                    </th>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Category
+                    </th>
+                    <th>
+                        Description
+                    </th>
+                    <th>
+                        Price
+                    </th>
+                    <th>
+                        Actions
+                    </th>
+                </tr>
+                @foreach (var item in Model.MenuItems) {
+                    <tr class="@(i == 0 || i % 2 == 0 ? "alternatingRow" : "row")">
+                        <td class="fivePercent">
+                            @item.Id
+                        </td>
+                        <td>
+                            <a href="Edit?id=@item.Id">
+                                @item.Name
+                            </a>
+                        </td>
+                        <td>
+                            @item.MenuCategory.Name
+                        </td>
+                        <td>
+                            @item.Description
+                        </td>
+                        <td>
+                            @item.Price
+                        </td>
+                        <td>
+                            <input stye="padding-left:20px;" type="button" id="delete" onclick="menuList.deleteRow(@item.Id, @(i + 1))" value="Delete Item"/>
+                        </td>
+                    </tr>
+                    i = i + 1;
+                }
+            </table>
+        }
+    </div>
+    <div class="col-2"></div>
+    </div>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+        <input type="button" id="add" name="add" value="Add Menu Item" onclick="window.location.href = 'New'"/>
+    </div>
+    <div class="col-2"></div>
+</div>

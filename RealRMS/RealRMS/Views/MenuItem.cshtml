@@ -1,0 +1,96 @@
+﻿@using RealRMS.Repository
+@using RealRMS.Utility
+@model RealRMS.Models.MenuModel
+
+@{
+    ViewBag.Title = "MenuItem";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    string formAction = Model.Id != default(int) ? "/Menu/Update" : "/Menu/Create";
+    string header = Model.Id != default(int) ? string.Format("Modify Menu Item - {0}", Model.Name) : "Create Menu Item";
+    MemoryCache cache = new MemoryCache();
+    MenuCategoryRepository menuCategoryRepo = new MenuCategoryRepository(cache);
+}
+@section stylesheets{
+    <link rel="stylesheet" href="~/Content/grid.css"/>
+}
+
+@section scripts{
+    <script type="text/javascript" language="javascript" src="~/Scripts/MenuItem.js"></script>
+}
+<form method="post" action="@formAction">
+    <div class="row">
+        <div class="col-12 alignCenter">
+            <h1>Create Menu</h1>
+        </div>
+    </div>
+    <div style="width: 100%; height:100%;">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-9">
+                <span class="errorText">
+                    @Html.Partial("_ValidationSummary", Model)
+
+                </span>
+                <span class="informationalText">
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 alignRight">
+                <label for="id">Id:</label>
+            </div>
+            <div class="col-9">
+                <input id="id" readonly name="id" value="@Model.Id" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 alignRight">
+                <label for="name">Name:</label>
+            </div>
+            <div class="col-9">
+                <input id="name" name="name" type="text" required value="@Model.Name" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 alignRight">
+                <label for="category">Category:</label>
+            </div>
+            <div class="col-9">
+                <select id="ddlCategory">
+                    <option>--Any--</option>
+                    @foreach (var category in menuCategoryRepo.GetAll()) {
+                        <option value="@category.Id" @(category.Id == Model.MenuCategory.Id ? "selected" : string.Empty)>@category.Name</option>
+                    }
+                </select>
+                <input type="hidden" id="menucategory.id" name="MenuCategory.Id" />
+                <input type="hidden" id="menucategory.name" name="MenuCategory.Name" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 alignRight">
+                <label for="price">Price</label>
+            </div>
+            <div class="col-9">
+                <input type="text" id="price" name="price" value="@Math.Round(Model.Price, 2)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 alignRight">
+                <label for="description">Description</label>
+            </div>
+            <div class="col-9">
+                <textarea id="description" name="description" rows="10" cols="50">@Model.Description</textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3 alignRight"></div>
+            <div class="col-6">
+                <input type="button" name="Cancel" value="Cancel" onclick="window.location.href = '/Menu/Index';"/>
+                <input type="button" name="next" id="next" value="Inventory" onclick="window.location.href = '/mock_menu_item_inventory.html';"/>
+                <input type="submit" name="save" id="save" value="Save" onclick="menuItem.setCategory(document.getElementById('ddlCategory'))"/>
+            </div>
+        </div>
+    </div>
+</form>

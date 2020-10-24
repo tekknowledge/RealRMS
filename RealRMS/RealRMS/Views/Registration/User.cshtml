@@ -1,0 +1,228 @@
+﻿@using RealRMS.Models
+@using RealRMS.Repository
+@model UserInfoModel
+@{
+    ViewBag.Title = "User";
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    string formAction = Model.Id != default(int) ? "Registration/Update" : "/Registration/Create";
+    string header = "Register Employee";
+
+    if (Model.Id > 0) {
+        formAction = "/Registration/Update";
+        header = string.Format("Modify Employee - {0} {1}", Model.FirstName, Model.LastName);
+    }
+
+    IEnumerable<Role> availableRoles = new RolesRepository().GetAll();
+    if (Model.Roles != null) {
+        availableRoles = availableRoles.Where(av => !Model.Roles.Select(cur => cur.Id).Contains(av.Id));
+    }
+}
+
+@section stylesheets{}
+
+@section scripts{
+    <script type="text/javascript" language="javascript" src="~/Scripts/employee.js"></script>
+}
+
+<form action="@formAction" method="post">
+
+    <div class="row">
+        <div class="col-12 alignCenter">
+            <h1 id="header">@header</h1>
+        </div>
+    </div>
+    <div style="width: 100%; height:100%;">
+        <div class="row">
+            <div class="col-3">
+                
+            </div>
+            <div class="col-9">
+                <span class="errorText" aria-live="polite">
+                    @Html.Partial("_ValidationSummary", Model)
+                </span>
+                <span class="informationalText" aria-live="polite">
+
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 alignRight">
+                <label for="Id">Emp&nbsp;Id:</label>
+            </div>
+            <div class="col-9">
+                <input id="Id" readonly name="Id" value="@Model.Id" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 alignRight">
+                <label for="FirstName">First&nbsp;Name:</label>
+            </div>
+            <div class="col-9">
+                <input id="FirstName" name="FirstName" type="text" required value="@Model.FirstName" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 alignRight">
+                <label for="MiddleName">Middle&nbsp;Name:</label>
+            </div>
+            <div class="col-9">
+                <input type="text" id="MiddleName" name="MiddleName" value="@Model.MiddleName" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 alignRight">
+                <label for="LastName">Last&nbsp;Name:</label>
+            </div>
+            <div class="col-9">
+                <input id="LastName" name="LastName" type="text" required="required" value="@Model.LastName" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 alignRight">
+                <label for="Street">Street&nbsp;Address:</label>
+            </div>
+            <div class="col-9">
+                <input type="text" id="Street" name="Street" required value="@Model.Street" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 alignRight">
+                <label for="City">City:</label>
+            </div>
+            <div class="col-9">
+                <input id="City" name="City" type="text" required value="@Model.City" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 alignRight">
+                <label for="State">State:</label>
+            </div>
+            <div class="col-9">
+                <input type="text" id="State" name="State" required value="@Model.State" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 alignRight">
+                <label for="Zip">Zip:</label>
+            </div>
+            <div class="col-9">
+                <input id="Zip" name="Zip" type="text" required="required" value="@Model.Zip"/>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-3 alignRight">
+                <label for="Phone">Phone:</label>
+            </div>
+            <div class="col-9">
+                <input id="Phone" name="Phone" type="text" required="required" value="@Model.Phone" onblur="site.ui.addDashes(this, 3, 6)"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 alignRight">
+                <label for="Email">Email:</label>
+            </div>
+            <div class="col-9">
+                <input id="Email" name="Email" type="text" required="required" value="@Model.Email" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 alignRight">
+                <label for="DateOfBirth">DOB:</label>
+            </div>
+            <div class="col-9">
+                <input type="date" name="DateOfBirth" id="DateOfBirth" value="@Model.DateOfBirth.ToString("yyyy-MM-dd")"/>
+                <!--<input type="text" id="dobMonth" name="dobMonth" required size="2"/>/
+                <input type="text" id="dobDay" name="dobDay" required size="2"/>/
+                <input type="text" id="dobYr" name="dobYr" required size="4"/>-->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 alignRight">
+                <label for="Ssn">SSN:</label>
+            </div>
+            <div class="col-9">
+                <input id="Ssn" name="Ssn" type="text" required="required" value="@Model.Ssn"  onblur="site.ui.addDashes(this, 3, 5)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 alignRight">
+                <label for="Rate">Pay Rate:</label>
+            </div>
+            <div class="col-9">
+                <input id="Rate" name="Rate" required="required" value="@String.Format("{0:.##}", Model.Rate)"/>
+            </div>
+        </div>
+        @if (Model.Id == (default(int))) {
+            <div class="row">
+                <div class="col-3 alignRight">
+                    <label for="Password">Password:</label>
+                </div>
+                <div class="col-9">
+                    <input type="Password" name="Password" required id="Password"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 alignRight">
+                    <label for="ConfirmPassword">Confirm Password:</label>
+                </div>
+                <div class="col-9">
+                    <input type="password" name="ConfirmPassword" required id="ConfirmPassword"/>
+                </div>
+            </div>
+        }
+        <div class="row">
+            <div class="col-3 alignRight">
+                Roles:
+            </div>
+            <div class="col-9">
+                <div class="row">
+                    <div class="col-3">
+                        <h3> <label for="assignedRoles">Assigned:</label> </h3>
+                    </div>
+                    <div class="col-3">
+
+                    </div>
+                    <div class="col-3">
+                        <h3> <label for="avRoles">Available:</label> </h3>
+                    </div>
+                </div>
+                <div class="row roles">
+                    <div class="col-3">
+                        <select id="assignedRoles" name="assignedRoles" multiple>
+                            @if (Model.Roles != null) {
+                                foreach (var role in Model.Roles) {
+                                    <option value="@role.Id">@role.Name</option>
+                                }
+                            }
+                        </select>
+                        <input type="hidden" id="rolestring" name="rolestring" />
+                    </div>
+                    <div class="col-3">
+                        <input type="button" id="assign" value="<<" onclick="manageEmployee.assign()" />
+                        <br />
+                        <input type="button" id="revoke" value=">>" onclick="manageEmployee.revoke()" />
+                    </div>
+                    <div class="col-3">
+                        <select id="avRoles" name="avRoles" multiple>
+                            @foreach (var role in availableRoles) {
+                                <option value="@role.Id">@role.Name</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 alignRight">
+                <input type="button" name="Cancel" value="Cancel" onclick="window.location.href = '/Registration/Index';" />
+                <input type="submit" name="save" id="save" value="Save" onclick="manageEmployee.gatherRoles()" />
+            </div>
+        </div>
+    </div>
+</form>
+
+

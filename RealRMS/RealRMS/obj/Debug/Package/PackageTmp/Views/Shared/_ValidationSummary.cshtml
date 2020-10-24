@@ -1,0 +1,10 @@
+﻿@model RealRMS.Models.IRMSValidatableEntity
+    
+@if (Model.ValidationErrors != null) {
+    <span>Please correct any errors and resubmit your request.</span>
+    foreach (var error in Model.ValidationErrors) {
+        <p class="validationSummaryItem">
+            <span class="validationSummarySpan" onclick="site.ui.focusOnValidationError('@error.HtmlId');">@error.HtmlId</span> - <span>@error.Message</span>
+        </p>
+    }
+}

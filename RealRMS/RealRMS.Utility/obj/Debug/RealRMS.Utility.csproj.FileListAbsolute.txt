@@ -1,0 +1,4 @@
+C:\Users\dwitherspoon\Documents\Visual Studio 2013\Projects\RealRMS\RealRMS.Utility\bin\Debug\RealRMS.Utility.dll
+C:\Users\dwitherspoon\Documents\Visual Studio 2013\Projects\RealRMS\RealRMS.Utility\bin\Debug\RealRMS.Utility.pdb
+C:\Users\dwitherspoon\Documents\Visual Studio 2013\Projects\RealRMS\RealRMS.Utility\obj\Debug\RealRMS.Utility.dll
+C:\Users\dwitherspoon\Documents\Visual Studio 2013\Projects\RealRMS\RealRMS.Utility\obj\Debug\RealRMS.Utility.pdb

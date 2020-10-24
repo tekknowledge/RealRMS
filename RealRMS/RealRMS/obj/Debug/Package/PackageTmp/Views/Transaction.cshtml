@@ -1,0 +1,59 @@
+﻿@using System.Globalization
+@model IEnumerable<RealRMS.Models.ViewModel.TransactionViewModel>
+@{
+    ViewBag.Title = "Transaction";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section stylesheets{
+    <link rel="stylesheet" href="~/Content/transaction.css"/>
+}
+@section scripts{
+    
+}
+<div>
+    @foreach (var transaction in Model) {
+        <div class="row alignCenter">
+            <h1>
+                Order # @transaction.OrderId
+            </h1>
+        </div>
+        <div clas="row">
+            <div class="col-12">
+                <span class="errorText">
+            </span>
+                <span class="informationalText">
+            </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                @foreach (var orderItem in transaction.MenuItems) {
+                    <div class="orderItem">
+                        <span class="flankLeft">
+                    @orderItem.Name
+                </span>
+                        <span class="flankRight alignRight">
+                    $@orderItem.Price.ToString("#.00", CultureInfo.InvariantCulture)
+                </span>
+                    </div>
+                }
+
+                <div class="orderItem">
+                    <span class="flankLeft">
+                    <b>Subtotal:</b>
+                </span>
+                    <span class="flankRight alignRight">
+                    $@Math.Round(transaction.MenuItems.Sum(i => i.Price), 2).ToString("#.00", CultureInfo.InvariantCulture)
+                </span>
+                </div>
+            </div>
+            <div class="col-7">
+                <div class="row">
+
+                </div>
+            </div>
+        </div>
+        <hr />
+    }
+</div>
+

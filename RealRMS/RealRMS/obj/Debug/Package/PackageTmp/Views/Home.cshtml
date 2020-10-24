@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "Welcome to the Restaurant Mangement System";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section stylesheets{
+}
+@section scripts{
+}
+<form method="post" action="/home/login">
+    <div class="row">
+        <div class="col-12 alignCenter">
+            <h1>@ViewBag.Title</h1>
+        </div>
+    </div>
+    <div style="width: 100%; height:100%;">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-9">
+                <span class="errorText">
+
+                </span>
+                <span class="informationalText">
+
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 alignRight">
+                Emp&nbsp;Id:
+            </div>
+            <div class="col-9">
+                <input type="text" id="Id" name="Id" required />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 alignRight">
+                Password:
+            </div>
+            <div class="col-9">
+                <input id="pwd" name="Password" type="Password" required />
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-3 alignRight">
+
+            </div>
+            <div class="col-9">
+                <input type="submit" name="Login" value="Log in" />
+            </div>
+        </div>
+    </div>
+</form>

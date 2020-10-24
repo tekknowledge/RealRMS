@@ -1,0 +1,100 @@
+﻿		.orderPane {
+			border-right: 2px solid black;
+		}
+		.orderedPane {
+			
+		}
+		.orderLink {
+			display: block;
+			text-decoration: none;
+			margin: 0; padding-left: 12px;
+			color: inherit;
+		}
+        .itemName {
+            font-size: x-large;
+        }
+		.orderLink:hover{
+			background-color:yellow;
+		}
+		
+		.menuList {
+			list-style-type:none;	
+		}
+		
+        .orderedItem {
+            text-decoration:none;
+        }
+		.orderedList {
+			width:85%;
+			border:none;
+		    border-collapse: collapse;
+		}
+        .orderedList td {
+            padding-top: .5em;
+            padding-bottom: .5em;
+        }
+		.itemDescription {
+			text-indent: 10px;	
+		}
+		.orderComment {
+		    font-size:12px;
+		}
+		.orderedList .seatColumn{
+			width:20%;	
+		}
+		
+        .removeIcon {
+            text-decoration:none;
+        }
+		.orderedList .deleteColumn{
+			width:10%;
+		}
+		
+		.flankLeft, .flankRight {
+			display: inline-block;	
+		}
+		
+		.menuList li span.flankLeft {
+			width:75%;			
+		}
+		
+		.menuList li span.flankRight {
+			width:20%;
+		}
+		
+		.modal span.flankLeft {
+			width:20%;
+		}
+		
+		.modal span.flankRight {
+			width:75%;	
+		}
+		
+		#orderModal, #commentModal, #checkoutModal {
+			display:block;	
+		}
+
+        #checkoutModal .modal-content {
+		    height:100%;
+		}
+
+        #checkoutModal div.row {
+            padding-bottom: 2px;
+            padding-top: 5px;
+        }
+
+        div.droppableSection {
+            min-height:50px;
+            min-width:50px;
+            float:left;border: 1px solid black;
+        }
+
+        ul.draggableList {
+            text-decoration:none;
+            list-style:none;
+            padding: 0;
+        }
+
+        ul.draggableList li {
+            display: inline;
+        }

@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Welcome!";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+@section stylesheets{}
+
+@section scripts{
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function() {
+            window.setTimeout(document.forms[0].submit(), 5000);
+        })
+    </script>
+}
+
+<h2>@ViewBag.Title</h2>
+<form action="/Registration/New" method="get" id="newReg" name="newReg">
+    <input type="hidden" id="hiddenSiteKey" name="hiddenSiteKey" value="@Request.QueryString["sitekey"]"/>
+    <p>
+        Thanks for using the RMS. Your site will be set up and you will be redirected to create an administrative account in 5 seconds.
+    </p>
+</form>

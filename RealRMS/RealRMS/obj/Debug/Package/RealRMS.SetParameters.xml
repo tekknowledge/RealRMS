@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="Default Web Site/" />
+  <setParameter name="DefaultConnection-Web.config Connection String" value="Server=tcp:derrickw.database.windows.net,1433;Database=RMS.Restaurant1;User ID=sqluser@derrickw;Password=d33zNutz;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" />
+  <setParameter name="ProductionConnection-Web.config Connection String" value="Data Source=rmsdbinstance.cyja3ne1p4bj.us-west-2.rds.amazonaws.com,1433;Database=RMS;User Id=administrator;Password=password;MultipleActiveResultSets=True" />
+</parameters>

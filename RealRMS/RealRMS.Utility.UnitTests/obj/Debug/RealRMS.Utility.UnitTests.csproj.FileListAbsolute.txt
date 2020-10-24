@@ -1,0 +1,8 @@
+C:\Users\dwitherspoon\Documents\Visual Studio 2013\Projects\RealRMS\RealRMS.Utility.UnitTests\bin\Debug\RealRMS.Utility.UnitTests.dll
+C:\Users\dwitherspoon\Documents\Visual Studio 2013\Projects\RealRMS\RealRMS.Utility.UnitTests\bin\Debug\RealRMS.Utility.UnitTests.pdb
+C:\Users\dwitherspoon\Documents\Visual Studio 2013\Projects\RealRMS\RealRMS.Utility.UnitTests\obj\Debug\RealRMS.Utility.UnitTests.dll
+C:\Users\dwitherspoon\Documents\Visual Studio 2013\Projects\RealRMS\RealRMS.Utility.UnitTests\obj\Debug\RealRMS.Utility.UnitTests.pdb
+C:\Users\dwitherspoon\Documents\Visual Studio 2013\Projects\RealRMS\RealRMS.Utility.UnitTests\bin\Debug\RealRMS.Utility.dll
+C:\Users\dwitherspoon\Documents\Visual Studio 2013\Projects\RealRMS\RealRMS.Utility.UnitTests\bin\Debug\RealRMS.Utility.pdb
+C:\Users\dwitherspoon\Documents\Visual Studio 2013\Projects\RealRMS\RealRMS.Utility.UnitTests\obj\Debug\RealRMS.Utility.UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\dwitherspoon\Documents\Visual Studio 2013\Projects\RealRMS\RealRMS.Utility.UnitTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
